@@ -11,7 +11,6 @@ import {
 } from "framer-motion";
 import Button from "@/components/Button";
 import Sticker from "@/components/Sticker";
-import PlaceholderImage from "@/components/PlaceholderImage";
 import { images } from "@/lib/images";
 
 const line1 = "Websites";
@@ -163,16 +162,12 @@ export default function HeroHome() {
               animate={reduce ? {} : { y: [0, -14, 0] }}
               transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
             >
-              <PlaceholderImage
-                src={images.mascotHero.src}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/mascot-herogif1.gif"
                 alt={images.mascotHero.alt}
-                width={images.mascotHero.width}
-                height={images.mascotHero.height}
-                priority
+                className="w-full h-auto"
               />
-              <p className="mt-2 text-right font-mono text-[10px] uppercase tracking-mono text-charcoal/35">
-                /images/mascot-hero.png
-              </p>
             </motion.div>
           </motion.div>
         </div>

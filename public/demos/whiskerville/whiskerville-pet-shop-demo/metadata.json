@@ -1,0 +1,6 @@
+{
+  "name": "Whiskerville Pet Shop Demo",
+  "description": "A playful, high-fidelity visual and interactive demo site for Whiskerville, a premium fictional Malaysian pet shop based in Plaza Damansara, KL. Features dynamic cursor-following pet mascots, custom illustrated design, shop filtering, services booking, and sensory interactions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

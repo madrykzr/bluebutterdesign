@@ -65,6 +65,12 @@ export const images = {
     width: 960,
     height: 640,
   },
+  portfolioDemoPhotographer: {
+    src: "/demos/lumen-loom/preview.png",
+    alt: "Demo concept website for a minimal photography studio",
+    width: 960,
+    height: 640,
+  },
 } as const;
 
 export type SiteImage = (typeof images)[keyof typeof images];

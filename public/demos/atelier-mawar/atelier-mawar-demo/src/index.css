@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100;200;300;400;500;600&family=JetBrains+Mono:wght@100;200;300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+  --font-mono: "JetBrains Mono", monospace;
+
+  /* Custom palette colors mapped dynamically to custom properties */
+  --color-primary: var(--brand-primary);
+  --color-secondary: var(--brand-secondary);
+  --color-accent-bg: var(--brand-accent-bg);
+  --color-dark: #0A0A0A;
+}
+
+/* Base styling and Lenis smooth scrolling integration */
+html {
+  scroll-behavior: initial;
+  background-color: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #FFFFFF;
+  color: #0A0A0A;
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Cursor hidden defaults (will show custom cursor on non-touch devices) */
+@media (any-pointer: fine) {
+  .custom-cursor-enabled * {
+    cursor: none !important;
+  }
+}
+
+/* Palette assignments */
+.theme-rose {
+  --brand-primary: #6E3848;    /* Deep rose accent */
+  --brand-secondary: #F2E2E0;  /* Soft blush */
+  --brand-accent-bg: #FAF3F2;  /* Light warm cream-blush overlap */
+}
+
+.theme-moss {
+  --brand-primary: #2C4C38;    /* Deep forest green accent */
+  --brand-secondary: #EBE4D5;  /* Soft champagne */
+  --brand-accent-bg: #FAF8F5;  /* Light rich champagne overlay */
+}
+
+/* Custom fade scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--brand-primary);
+  opacity: 0.3;
+}
+
+/* Custom styles for high editorial fashion aesthetics */
+.text-serif-display {
+  font-family: var(--font-serif);
+  letter-spacing: -0.04em;
+  line-height: 0.85;
+}
+
+.tight-heading {
+  font-family: var(--font-serif);
+  letter-spacing: -0.04em;
+  line-height: 0.8;
+}
+
+.track-label {
+  letter-spacing: 0.2em;
+}
+
+.asymmetric-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 3rem;
+}
+
+.curtain-revealed {
+  background: linear-gradient(90deg, var(--brand-primary) 0%, var(--brand-secondary) 100%);
+}
+
+/* Curtain Wipe reveals */
+.clip-reveal {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Lenis custom settings */
+.lenis.lenis-smooth {
+  scroll-behavior: auto;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overflow: clip;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+.lenis.lenis-scrolling iframe {
+  pointer-events: none;
+}

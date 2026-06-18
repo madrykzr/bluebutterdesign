@@ -1,0 +1,6 @@
+{
+  "name": "Atelier Mawar Demo",
+  "description": "A luxury fashion magazine styled visual demo site for Atelier Mawar — a fictional Malaysian couture boutique inspired by Cameron Highlands morning fog.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
