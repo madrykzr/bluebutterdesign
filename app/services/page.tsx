@@ -25,10 +25,10 @@ export const metadata: Metadata = {
 
 const overview = [
   {
-    title: "Promo Landing Page",
+    title: "Starter Pack Landing Page",
     description:
-      "A simple promotional page live in 48 hours — your contact info, WhatsApp button, no domain needed. The most budget-friendly start.",
-    href: "/services/promo-landing-page",
+      "One page online in 48 hours — contact info, WhatsApp button, free hosting. Fixed RM 200, no domain needed.",
+    href: "/services/starter-pack-landing-page",
     bestFor: "Home businesses, pop-ups, side hustles",
     rotate: -2,
     offset: "lg:mt-0",

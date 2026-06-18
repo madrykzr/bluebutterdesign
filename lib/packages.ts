@@ -35,14 +35,14 @@ export type Package = {
 
 export const packages: Package[] = [
   {
-    name: "Promo",
-    subtitle: "Promo Landing Page",
-    priceFrom: "From RM 200",
-    priceRange: "RM 200 – RM 350",
-    rangeNote: "depending on content",
-    priceNote: "One-time",
+    name: "Starter Pack",
+    subtitle: "Starter Pack Landing Page",
+    priceFrom: "RM 200",
+    priceRange: "Fixed price",
+    rangeNote: "",
+    priceNote: "One-time · fixed price",
     description:
-      "A simple promotional page to get your business online fast. Share the link anywhere — no domain purchase needed.",
+      "A simple page to get your small business online fast. Share the link anywhere — no domain purchase needed.",
     bestFor: "Home businesses, pop-ups, side hustles on a tight budget",
     visibleFeatures: [
       "1 custom promotional page",
@@ -59,7 +59,7 @@ export const packages: Package[] = [
       "Ready to upgrade to a full site anytime",
     ],
     delivery: "1–2 working days",
-    href: "/services/promo-landing-page",
+    href: "/services/starter-pack-landing-page",
   },
   {
     name: "Starter",

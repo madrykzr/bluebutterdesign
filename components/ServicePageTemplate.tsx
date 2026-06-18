@@ -12,14 +12,20 @@ import SectionHeading from "@/components/SectionHeading";
 import Sticker from "@/components/Sticker";
 import WhyPriceRange from "@/components/WhyPriceRange";
 import { WhatsAppIcon } from "@/components/Navbar";
-import { getPackageBySlug } from "@/lib/packages";
+import { getPackageBySlug, type Package } from "@/lib/packages";
 import { site } from "@/lib/site";
 import type { ServiceDetail } from "@/lib/services";
 
 /**
  * Shared layout for the four /services sub-pages.
  */
-export default function ServicePageTemplate({ service }: { service: ServiceDetail }) {
+export default function ServicePageTemplate({
+  service,
+  additionalPackages,
+}: {
+  service: ServiceDetail;
+  additionalPackages?: Package[];
+}) {
   const pkg = getPackageBySlug(service.slug);
   return (
     <>
@@ -126,14 +132,27 @@ export default function ServicePageTemplate({ service }: { service: ServiceDetai
           <div className="mx-auto max-w-6xl px-4 md:px-6">
             <SectionHeading
               eyebrow="Pricing"
-              title={`What the ${service.name} costs`}
+              title={additionalPackages?.length ? "Choose your tier" : `What the ${service.name} costs`}
               description="One-time payment — the price you agree is the price you pay. No hidden fees, no subscriptions."
             />
-            <div className="mx-auto max-w-sm">
-              <AnimatedSection>
-                <PricingCard pkg={pkg} />
-              </AnimatedSection>
-            </div>
+            {additionalPackages?.length ? (
+              <div className="mx-auto grid max-w-2xl gap-6 sm:grid-cols-2">
+                {additionalPackages.map((p, i) => (
+                  <AnimatedSection key={p.name} delay={i * 0.1}>
+                    <PricingCard pkg={p} />
+                  </AnimatedSection>
+                ))}
+                <AnimatedSection delay={additionalPackages.length * 0.1}>
+                  <PricingCard pkg={pkg} />
+                </AnimatedSection>
+              </div>
+            ) : (
+              <div className="mx-auto max-w-sm">
+                <AnimatedSection>
+                  <PricingCard pkg={pkg} />
+                </AnimatedSection>
+              </div>
+            )}
             <WhyPriceRange className="mt-8" />
           </div>
         </section>

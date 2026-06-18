@@ -20,13 +20,13 @@ export type ServiceDetail = {
 
 export const serviceDetails: ServiceDetail[] = [
   {
-    slug: "promo-landing-page",
-    name: "Promo Landing Page",
-    headline: "Get online in 48 hours — from RM 200.",
+    slug: "starter-pack-landing-page",
+    name: "Starter Pack Landing Page",
+    headline: "Get your small business online — RM 200, fixed.",
     intro:
-      "The most budget-friendly way to get your business online. One promotional page, your contact details, and a WhatsApp button — shareable anywhere, no domain needed.",
+      "The most budget-friendly way to get your business online. One page, your contact details, and a WhatsApp button — shareable anywhere, no domain needed.",
     whatItIs:
-      "A promo landing page is a single promotional page hosted for free on Vercel, Netlify, or Beacon.ai. You get a shareable link (like yourbrand.vercel.app) you can post on Instagram, WhatsApp, printed flyers, or anywhere. No domain purchase required — perfect for testing the waters or getting visible fast without the full investment.",
+      "A Starter Pack landing page is a single page hosted for free on Vercel, Netlify, or Beacon.ai. You get a shareable link (like yourbrand.vercel.app) you can post on Instagram, WhatsApp, printed flyers, or anywhere. No domain purchase required — perfect for small businesses wanting to get visible fast without the full investment.",
     whoItsFor: [
       "Home-based sellers just getting started",
       "Pop-up stalls, food trucks, or temporary promotions",
@@ -70,7 +70,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         question: "What is the difference between this and the RM 500 Landing Page?",
         answer:
-          "The Promo page is purely promotional — your story, contact info, and WhatsApp button. The full Landing Page adds an enquiry form with Google Sheets tracking, basic SEO, Google Analytics, and a revision round. If you need leads tracked properly, go with the full Landing Page.",
+          "The Starter Pack is purely a presence page — your story, contact info, and WhatsApp button. The full Landing Page adds an enquiry form with Google Sheets tracking, basic SEO, Google Analytics, and a revision round. If you need leads tracked properly, go with the full Landing Page.",
       },
     ],
   },
