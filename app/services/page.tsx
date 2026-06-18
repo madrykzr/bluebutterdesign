@@ -3,7 +3,6 @@ import AddOns from "@/components/AddOns";
 import AnimatedSection from "@/components/AnimatedSection";
 import AutomationSection from "@/components/AutomationSection";
 import CtaBand from "@/components/CtaBand";
-import DragScroller from "@/components/DragScroller";
 import HeroBlobs from "@/components/HeroBlobs";
 import Label from "@/components/Label";
 import MeltDivider from "@/components/MeltDivider";
