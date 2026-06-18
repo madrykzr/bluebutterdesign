@@ -5,7 +5,6 @@ import AutomationSection from "@/components/AutomationSection";
 import Button from "@/components/Button";
 import CtaBand from "@/components/CtaBand";
 import HeroHome from "@/components/HeroHome";
-import CursorMascot from "@/components/motion/CursorMascot";
 import MarqueeStrip from "@/components/MarqueeStrip";
 import MeltDivider from "@/components/MeltDivider";
 import SectionHeading from "@/components/SectionHeading";
@@ -75,7 +74,6 @@ export default function HomePage() {
   return (
     <>
       <HeroHome />
-      <CursorMascot />
 
       {/* marquee #1 — categories, mono, butter, scrolling left */}
       <MarqueeStrip speed={45} direction="left" variant="butter" />
