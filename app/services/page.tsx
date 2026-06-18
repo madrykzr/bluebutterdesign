@@ -124,13 +124,13 @@ export default function ServicesPage() {
             index="05"
             eyebrow="Packages & pricing"
             title="Honest prices in MYR, everything spelled out"
-            description=”One-time payment — your website is yours, not rented. Tap the “more features” link inside any card to see everything that's included.”
+            description="One-time payment — your website is yours, not rented. Tap the “more features” link inside any card to see everything that's included."
           />
         </div>
-        <div className=”mx-auto max-w-6xl px-4 md:px-6”>
-          <div className=”grid grid-cols-1 gap-6 pt-16 sm:grid-cols-2 xl:grid-cols-4”>
+        <div className="mx-auto max-w-6xl px-4 md:px-6">
+          <div className="grid grid-cols-1 gap-6 pt-16 sm:grid-cols-2 xl:grid-cols-4">
             {packages.map((pkg, i) => (
-              <PricingCard key={pkg.name} pkg={pkg} index={String(i + 1).padStart(2, “0”)} />
+              <PricingCard key={pkg.name} pkg={pkg} index={String(i + 1).padStart(2, "0")} />
             ))}
           </div>
         </div>

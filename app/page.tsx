@@ -148,13 +148,13 @@ export default function HomePage() {
             index="04"
             eyebrow="Packages"
             title="Simple packages, honest prices"
-            description=”Every package is one-time payment — your website is yours, no rental. Tap the “more features” link inside any card to see the full list.”
+            description="Every package is one-time payment — your website is yours, no rental. Tap the “more features” link inside any card to see the full list."
           />
         </div>
-        <div className=”mx-auto max-w-6xl px-4 md:px-6”>
-          <div className=”grid grid-cols-1 gap-6 pt-16 sm:grid-cols-2 xl:grid-cols-4”>
+        <div className="mx-auto max-w-6xl px-4 md:px-6">
+          <div className="grid grid-cols-1 gap-6 pt-16 sm:grid-cols-2 xl:grid-cols-4">
             {packages.map((pkg, i) => (
-              <PricingCard key={pkg.name} pkg={pkg} index={String(i + 1).padStart(2, “0”)} />
+              <PricingCard key={pkg.name} pkg={pkg} index={String(i + 1).padStart(2, "0")} />
             ))}
           </div>
         </div>
