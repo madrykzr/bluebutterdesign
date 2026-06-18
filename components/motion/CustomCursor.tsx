@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { motion, useMotionValue, useSpring } from "framer-motion";
+import { motion, useMotionValue } from "framer-motion";
 
 /**
  * Custom cursor: a small Morning Butter dot that follows the mouse and
@@ -15,8 +15,6 @@ export default function CustomCursor() {
 
   const x = useMotionValue(-100);
   const y = useMotionValue(-100);
-  const springX = useSpring(x, { stiffness: 500, damping: 40, mass: 0.4 });
-  const springY = useSpring(y, { stiffness: 500, damping: 40, mass: 0.4 });
 
   useEffect(() => {
     const fine = window.matchMedia("(hover: hover) and (pointer: fine)");
@@ -68,8 +66,8 @@ export default function CustomCursor() {
       aria-hidden="true"
       className="pointer-events-none fixed left-0 top-0 z-[9999] bg-butter mix-blend-multiply"
       style={{
-        x: springX,
-        y: springY,
+        x,
+        y,
         translateX: "-50%",
         translateY: "-50%",
       }}
