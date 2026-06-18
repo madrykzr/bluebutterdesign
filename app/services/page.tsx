@@ -3,7 +3,6 @@ import AddOns from "@/components/AddOns";
 import AnimatedSection from "@/components/AnimatedSection";
 import AutomationSection from "@/components/AutomationSection";
 import CtaBand from "@/components/CtaBand";
-import DragScroller from "@/components/DragScroller";
 import HeroBlobs from "@/components/HeroBlobs";
 import Label from "@/components/Label";
 import MeltDivider from "@/components/MeltDivider";
@@ -125,17 +124,15 @@ export default function ServicesPage() {
             index="05"
             eyebrow="Packages & pricing"
             title="Honest prices in MYR, everything spelled out"
-            description="One-time payment — your website is yours, not rented. Tap the “more features” link inside any card to see everything that's included. Drag the stack to explore."
+            description="One-time payment — your website is yours, not rented. Tap the “more features” link inside any card to see everything that's included."
           />
         </div>
         <div className="mx-auto max-w-6xl px-4 md:px-6">
-          <DragScroller>
+          <div className="grid grid-cols-1 gap-6 pt-16 sm:grid-cols-2 xl:grid-cols-4">
             {packages.map((pkg, i) => (
-              <div key={pkg.name} className="w-[300px] shrink-0 snap-start sm:w-[340px]">
-                <PricingCard pkg={pkg} index={String(i + 1).padStart(2, "0")} />
-              </div>
+              <PricingCard key={pkg.name} pkg={pkg} index={String(i + 1).padStart(2, "0")} />
             ))}
-          </DragScroller>
+          </div>
         </div>
 
         <WhyPriceRange className="mt-12 px-4 md:px-6" />
