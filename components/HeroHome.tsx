@@ -86,9 +86,9 @@ export default function HeroHome() {
     <section
       ref={sectionRef}
       className="relative overflow-hidden bg-cream"
-      aria-label="Bluebutter Design — web design and development for businesses across Malaysia"
+      aria-label="Bluebutter Design, web design and development for businesses across Malaysia"
     >
-      {/* drips running down from the top edge — the whole viewport is melting */}
+      {/* drips running down from the top edge, the whole viewport is melting */}
       <ViewportDrips />
 
       {/* soft drifting blobs */}
@@ -180,7 +180,7 @@ export default function HeroHome() {
             transition={{ delay: 1.0, duration: 0.7 }}
           >
             <p className="max-w-lg text-lg leading-relaxed text-charcoal/70">
-              Custom websites built with modern technology — fast, responsive,
+              Custom websites built with modern technology, fast, responsive,
               and designed to convert. We work with businesses across Malaysia,
               from cafes and retail to corporate, e-commerce and creative
               studios. Transparent pricing, no hidden fees, delivered on time.

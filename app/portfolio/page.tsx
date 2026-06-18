@@ -11,7 +11,7 @@ import { projects } from "@/lib/portfolio";
 export const metadata: Metadata = {
   title: "Our Work",
   description:
-    "Selected projects and demo concepts across industries — cafes, boutiques, barbershops, interior design, e-commerce, and many more.",
+    "Selected projects and demo concepts across industries, cafes, boutiques, barbershops, interior design, e-commerce, and many more.",
   alternates: { canonical: "/portfolio" },
 };
 

@@ -7,7 +7,7 @@ type LabelProps = {
 };
 
 /**
- * Mono editorial caption — "01 / WEB DESIGN STUDIO" style labels used for
+ * Mono editorial caption, "01 / WEB DESIGN STUDIO" style labels used for
  * eyebrows, section numbers and status text throughout the site.
  */
 export default function Label({ index, children, dark = false, className = "" }: LabelProps) {

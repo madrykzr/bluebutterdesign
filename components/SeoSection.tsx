@@ -5,12 +5,12 @@ const seoItems = [
   {
     title: "On-page SEO",
     description:
-      "Every page is written and structured so Google understands exactly what you offer — proper headings, descriptions and keywords your customers actually search.",
+      "Every page is written and structured so Google understands exactly what you offer, proper headings, descriptions and keywords your customers actually search.",
   },
   {
     title: "Meta & OG tags",
     description:
-      "When someone shares your site on WhatsApp or Facebook, it shows a clean preview with your logo and message — not a broken link.",
+      "When someone shares your site on WhatsApp or Facebook, it shows a clean preview with your logo and message, not a broken link.",
   },
   {
     title: "Sitemap & indexing",
@@ -25,12 +25,12 @@ const seoItems = [
   {
     title: "Core Web Vitals",
     description:
-      "Fast-loading pages aren't just nice — Google ranks them higher. We optimise images, code and hosting for top speed scores.",
+      "Fast-loading pages aren't just nice, Google ranks them higher. We optimise images, code and hosting for top speed scores.",
   },
   {
     title: "Local SEO for Malaysia",
     description:
-      "We optimise for how Malaysians actually search — \"kedai kopi near me\", \"barber PJ\", \"photographer KL\" — in English and Bahasa.",
+      "We optimise for how Malaysians actually search, \"kedai kopi near me\", \"barber PJ\", \"photographer KL\", in English and Bahasa.",
   },
 ];
 

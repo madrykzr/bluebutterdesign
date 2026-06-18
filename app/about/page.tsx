@@ -22,32 +22,32 @@ const reasons = [
   {
     title: "We speak human, not tech",
     description:
-      "No jargon, no acronyms thrown around to sound clever. We explain everything the way we'd explain it to our own mak — clearly, patiently, in plain English (or Bahasa).",
+      "No jargon, no acronyms thrown around to sound clever. We explain everything the way we'd explain it to our own mak, clearly, patiently, in plain English (or Bahasa).",
   },
   {
     title: "Clear quotes, zero hidden fees",
     description:
-      "You get one honest quote before we start. Want to add extra features or pages later? We'll always tell you the cost upfront before doing any work — you stay in full control, no surprises mid-project.",
+      "You get one honest quote before we start. Want to add extra features or pages later? We'll always tell you the cost upfront before doing any work, you stay in full control, no surprises mid-project.",
   },
   {
     title: "Your site, your choice",
     description:
-      "Your website is fully yours. Host it free on Vercel or Netlify, or use your own provider — your call. We build on a solid foundation so you're never locked in and never dependent on us just to keep things running.",
+      "Your website is fully yours. Host it free on Vercel or Netlify, or use your own provider, your call. We build on a solid foundation so you're never locked in and never dependent on us just to keep things running.",
   },
   {
     title: "Modern stack, modern results",
     description:
-      "Next.js, Tailwind, Framer Motion, Vercel — the same tools the world's best agencies use. Fast loads, smooth interactions, ready to scale as your business grows.",
+      "Next.js, Tailwind, Framer Motion, Vercel, the same tools the world's best agencies use. Fast loads, smooth interactions, ready to scale as your business grows.",
   },
   {
     title: "Fast without cutting corners",
     description:
-      "A landing page in a week, a full site in two to three. We work quick because we've done it many times — not because we skip the important parts.",
+      "A landing page in a week, a full site in two to three. We work quick because we've done it many times, not because we skip the important parts.",
   },
   {
     title: "We stick around",
     description:
-      "Launch day isn't goodbye. Questions, tweaks, upgrades — just WhatsApp us. We answer like a kawan, not a ticket number.",
+      "Launch day isn't goodbye. Questions, tweaks, upgrades, just WhatsApp us. We answer like a kawan, not a ticket number.",
   },
 ];
 
@@ -79,7 +79,7 @@ export default function AboutPage() {
                 couldn&apos;t even update.
               </p>
               <p>
-                We thought websites should be like good butter — warm,
+                We thought websites should be like good butter, warm,
                 smooth, and they make everything better. So we built a studio
                 around three things: honest fixed pricing, plain-English
                 communication, and websites that genuinely work hard for the
@@ -87,7 +87,7 @@ export default function AboutPage() {
               </p>
               <p>
                 Today we design and build for cafes, boutiques, photographers,
-                music studios, barbers and pet shops across Malaysia — every
+                music studios, barbers and pet shops across Malaysia, every
                 project hand-made, no templates, no nonsense.
               </p>
             </div>
@@ -144,7 +144,7 @@ export default function AboutPage() {
 
       <MeltDivider from="#EEF2F8" to="#FAF5E8" />
 
-      {/* How we work — process timeline */}
+      {/* How we work, process timeline */}
       <section className="relative bg-dot-grid bg-buttermilk py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
           <SectionHeading

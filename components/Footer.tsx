@@ -32,7 +32,7 @@ export default function Footer() {
               </p>
             </div>
 
-            <nav aria-label="Footer — pages">
+            <nav aria-label="Footer, pages">
               <h3 className="font-mono text-[11px] uppercase tracking-mono text-butter">
                 Pages
               </h3>
@@ -52,7 +52,7 @@ export default function Footer() {
               </ul>
             </nav>
 
-            <nav aria-label="Footer — services">
+            <nav aria-label="Footer, services">
               <h3 className="font-mono text-[11px] uppercase tracking-mono text-butter">
                 Services
               </h3>
@@ -114,7 +114,7 @@ export default function Footer() {
           </div>
 
           <div className="mt-12 flex flex-col gap-3 border-t border-cream/10 pt-6 font-mono text-[11px] uppercase tracking-mono text-cream/40 md:flex-row md:items-center md:justify-between">
-            <p>© {year} {site.name} — Made with butter in Malaysia 🧈</p>
+            <p>© {year} {site.name}, Made with butter in Malaysia 🧈</p>
             <p>Web design &amp; development · Malaysia</p>
           </div>
         </div>

@@ -1,12 +1,12 @@
 /**
- * Pricing packages — single source of truth for the home pricing section,
+ * Pricing packages, single source of truth for the home pricing section,
  * the /services page, and each service sub-page's hero. Edit values here,
  * the whole site updates.
  *
  * Dash conventions (don't switch to plain hyphens):
  *   • Price ranges use EN dash with spaces: "RM 500 – RM 1,200"
  *   • Delivery / range text uses EN dash with no spaces: "3–5 working days"
- *   • Label separators use EM dash with spaces: "DELIVERY — 3–5 working days"
+ *   • Label separators use EM dash with spaces: "DELIVERY, 3–5 working days"
  */
 export type Package = {
   name: string;
@@ -25,7 +25,7 @@ export type Package = {
   visibleFeatures: string[];
   /** Hidden features revealed by the "+ X more features" toggle */
   moreFeatures: string[];
-  /** En-dash, no spaces — "3–5 working days" or "1–2 weeks" */
+  /** En-dash, no spaces, "3–5 working days" or "1–2 weeks" */
   delivery: string;
   href: string;
   popular?: boolean;
@@ -42,7 +42,7 @@ export const packages: Package[] = [
     rangeNote: "",
     priceNote: "One-time · fixed price",
     description:
-      "A simple page to get your small business online fast. Share the link anywhere — no domain purchase needed.",
+      "A simple page to get your small business online fast. Share the link anywhere, no domain purchase needed.",
     bestFor: "Home businesses, pop-ups, side hustles on a tight budget",
     visibleFeatures: [
       "1 custom promotional page",
@@ -53,7 +53,7 @@ export const packages: Package[] = [
       "Free hosting (Vercel / Netlify / Beacon.ai)",
     ],
     moreFeatures: [
-      "No domain required — shareable free subdomain",
+      "No domain required, shareable free subdomain",
       "Your brand colours & logo",
       "Basic on-brand typography",
       "Ready to upgrade to a full site anytime",
@@ -101,11 +101,11 @@ export const packages: Package[] = [
     rangeNote: "depending on scope",
     priceNote: "One-time",
     description:
-      "A proper home for your business — up to 5 pages with booking forms and easy content editing.",
+      "A proper home for your business, up to 5 pages with booking forms and easy content editing.",
     bestFor: "Cafes, salons, photography studios, small boutiques",
     visibleFeatures: [
       "Up to 5 custom pages",
-      "CMS — edit content yourself",
+      "CMS, edit content yourself",
       "Booking / enquiry form integration",
       "Full SEO setup + Google Business Profile",
       "WhatsApp integration with auto-replies",
@@ -173,7 +173,7 @@ export const packages: Package[] = [
     rangeNote: "depending on scope",
     priceNote: "One-time",
     description:
-      "Sell online with a store your customers will love — products, cart, and Malaysian payment options.",
+      "Sell online with a store your customers will love, products, cart, and Malaysian payment options.",
     bestFor: "Retail brands, online stores, product-based businesses",
     visibleFeatures: [
       "Online store with cart & checkout",
@@ -202,7 +202,7 @@ export const packages: Package[] = [
     delivery: "3–4 weeks",
     href: "/services/e-commerce",
     footnote:
-      "Payment gateway integration is a separate add-on (Stripe / Billplz / toyyibPay / SenangPay / iPay88 — from RM 500).",
+      "Payment gateway integration is a separate add-on (Stripe / Billplz / toyyibPay / SenangPay / iPay88, from RM 500).",
   },
 ];
 

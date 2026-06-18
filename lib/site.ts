@@ -2,7 +2,7 @@ export const site = {
   name: "Bluebutter Design",
   tagline: "Web design & development for businesses across Malaysia",
   description:
-    "Bluebutter Design is a Malaysian web design and development agency building custom websites with modern technology. Fast, responsive and designed to convert — for cafes, retail, corporate, e-commerce, creative studios and many more.",
+    "Bluebutter Design is a Malaysian web design and development agency building custom websites with modern technology. Fast, responsive and designed to convert, for cafes, retail, corporate, e-commerce, creative studios and many more.",
   // TODO: replace with your real domain before going live
   url: "https://bluebutterdesign.my",
   email: "bluebutterdesign@gmail.com",

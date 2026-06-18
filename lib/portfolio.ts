@@ -5,7 +5,7 @@ export type ProjectTint = "butter" | "bluegrey" | "cream" | "charcoal";
 export type Project = {
   slug: string;
   title: string;
-  /** mono caption, e.g. "MUSIC PRODUCTION" or "CAFE — DEMO" */
+  /** mono caption, e.g. "MUSIC PRODUCTION" or "CAFE, DEMO" */
   category: string;
   description: string;
   image: SiteImage;
@@ -31,7 +31,7 @@ export const projects: Project[] = [
   {
     slug: "kopi-and-co",
     title: "Kopi & Co",
-    category: "Cafe — Demo",
+    category: "Cafe, Demo",
     description: "A warm kedai kopi concept with menu and one-tap table bookings.",
     image: images.portfolioDemoCafe,
     href: "https://demokopico.vercel.app/",
@@ -42,7 +42,7 @@ export const projects: Project[] = [
   {
     slug: "atelier-mawar",
     title: "Atelier Mawar",
-    category: "Boutique — Demo",
+    category: "Boutique, Demo",
     description: "An elegant boutique concept with a lookbook and WhatsApp enquiries.",
     image: images.portfolioDemoBoutique,
     href: "https://demoatelier-mawar.vercel.app/",
@@ -53,7 +53,7 @@ export const projects: Project[] = [
   {
     slug: "sharp-and-co-barbers",
     title: "Sharp & Co Barbers",
-    category: "Barber — Demo",
+    category: "Barber, Demo",
     description: "A bold barbershop concept with price list and slot booking.",
     image: images.portfolioDemoBarber,
     href: "https://sharp-co-barbers-bluebutterdesign.vercel.app/",
@@ -64,7 +64,7 @@ export const projects: Project[] = [
   {
     slug: "whiskerville-pet-shop",
     title: "Whiskerville Pet Shop",
-    category: "Pet Shop — Demo",
+    category: "Pet Shop, Demo",
     description: "A friendly pet shop concept with grooming bookings and a catalog.",
     image: images.portfolioDemoPetshop,
     href: "https://demo-whiskerville-bluebutterdesign.vercel.app/",
@@ -75,7 +75,7 @@ export const projects: Project[] = [
   {
     slug: "lumen-and-loom",
     title: "Lumen & Loom",
-    category: "Photographer — Demo",
+    category: "Photographer, Demo",
     description: "Minimal photography portfolio with gallery.",
     image: images.portfolioDemoPhotographer,
     href: "https://lumen-loom-bluebutterdesign.vercel.app/",

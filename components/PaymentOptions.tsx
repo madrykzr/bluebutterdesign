@@ -23,12 +23,12 @@ export default function PaymentOptions({ index = "06", dark = false }: PaymentOp
           index={index}
           eyebrow="Flexible payment"
           title="Pay how you want"
-          description="Two simple ways to pay. Choose whichever fits your cashflow — both keep things crystal clear."
+          description="Two simple ways to pay. Choose whichever fits your cashflow, both keep things crystal clear."
           {...headingProps}
         />
 
         <div className="grid gap-6 lg:grid-cols-2">
-          {/* Option 1 — Pay in full */}
+          {/* Option 1, Pay in full */}
           <AnimatedSection delay={0} className="h-full">
             <div className="relative flex h-full flex-col rounded-[28px] border border-butter-dark/40 bg-butter/25 p-7 shadow-card md:p-8">
               <div className="flex items-start justify-between gap-4">
@@ -57,7 +57,7 @@ export default function PaymentOptions({ index = "06", dark = false }: PaymentOp
             </div>
           </AnimatedSection>
 
-          {/* Option 2 — Milestone installments */}
+          {/* Option 2, Milestone installments */}
           <AnimatedSection delay={0.12} className="h-full">
             <div className="relative flex h-full flex-col rounded-[28px] border border-bluegrey/30 bg-bluegrey/10 p-7 shadow-card md:p-8">
               <div className="flex items-start justify-between gap-4">
@@ -76,7 +76,7 @@ export default function PaymentOptions({ index = "06", dark = false }: PaymentOp
               </div>
               <p className="mt-4 text-sm leading-relaxed text-charcoal/75 md:text-base">
                 Split into up to 3 payments tied to project milestones. No
-                interest, no fees, no subscriptions — just pay as we hit each stage.
+                interest, no fees, no subscriptions, just pay as we hit each stage.
               </p>
               <ol className="mt-5 space-y-3">
                 {milestones.map((m, i) => (
@@ -106,8 +106,8 @@ export default function PaymentOptions({ index = "06", dark = false }: PaymentOp
           <p className="mx-auto mt-8 max-w-3xl rounded-2xl border border-charcoal/8 bg-white/70 p-5 text-center text-sm leading-relaxed text-charcoal/70 shadow-card backdrop-blur-sm">
             <span className="font-mono text-[11px] uppercase tracking-mono text-bluegrey-dark">
               How to pay
-            </span>{" "}
-            — We accept bank transfer (Maybank / CIMB), TNG eWallet, DuitNow QR
+            </span>{": "}
+            We accept bank transfer (Maybank / CIMB), TNG eWallet, DuitNow QR
             and major cards. A proper invoice is provided for every payment.
           </p>
         </AnimatedSection>

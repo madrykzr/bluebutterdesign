@@ -16,9 +16,9 @@ import { site } from "@/lib/site";
 
 
 export const metadata: Metadata = {
-  title: `${site.name} — Web Design & Development Malaysia`,
+  title: `${site.name}, Web Design & Development Malaysia`,
   description:
-    "Custom websites built with modern technology. Fast, responsive, and designed to convert. Serving businesses across Malaysia — cafes, retail, corporate, e-commerce, creative studios, and many more.",
+    "Custom websites built with modern technology. Fast, responsive, and designed to convert. Serving businesses across Malaysia, cafes, retail, corporate, e-commerce, creative studios, and many more.",
   alternates: { canonical: "/" },
 };
 
@@ -52,7 +52,7 @@ const servicesOverview = [
   },
   {
     title: "E-Commerce",
-    description: "Your own online store with Malaysian payment options — no marketplace commissions.",
+    description: "Your own online store with Malaysian payment options, no marketplace commissions.",
     href: "/services/e-commerce",
     bestFor: "Retail & product brands",
     icon: <CartIcon />,
@@ -65,7 +65,7 @@ const socialProof = [
   "Trusted by businesses across Malaysia",
   "RM0/month automation",
   "Reply within 1 working day",
-  "Modern stack — Next.js + Tailwind",
+  "Modern stack, Next.js + Tailwind",
   "Built for performance & SEO",
   "Transparent pricing",
 ];
@@ -75,10 +75,10 @@ export default function HomePage() {
     <>
       <HeroHome />
 
-      {/* marquee #1 — categories, mono, butter, scrolling left */}
+      {/* marquee #1, categories, mono, butter, scrolling left */}
       <MarqueeStrip speed={45} direction="left" variant="butter" />
 
-      {/* ── Services overview — staggered, rotated cards ───── */}
+      {/* ── Services overview, staggered, rotated cards ───── */}
       <section className="relative bg-cream py-20 md:py-28">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
           <SectionHeading
@@ -86,7 +86,7 @@ export default function HomePage() {
             index="02"
             eyebrow="What we build"
             title="One agency, every kind of website"
-            description="From a single landing page to a full online store — pick what fits today, upgrade when you grow. We'll honestly tell you which one you need."
+            description="From a single landing page to a full online store, pick what fits today, upgrade when you grow. We'll honestly tell you which one you need."
           />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {servicesOverview.map((s, i) => (
@@ -124,7 +124,7 @@ export default function HomePage() {
             index="03"
             eyebrow="Packages"
             title="Simple packages, honest prices"
-            description="One-time payment — no hidden fees, no monthly subscriptions. Pick what fits today, upgrade anytime."
+            description="One-time payment, no hidden fees, no monthly subscriptions. Pick what fits today, upgrade anytime."
           />
           <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 xl:grid-cols-5">
             {packages.map((pkg, i) => (
@@ -148,7 +148,7 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* marquee #2 — social proof, charcoal, scrolling right, slower */}
+      {/* marquee #2, social proof, charcoal, scrolling right, slower */}
       <MarqueeStrip items={socialProof} speed={32} direction="right" variant="charcoal" />
 
       {/* ── Testimonials ───────────────────────────────────── */}

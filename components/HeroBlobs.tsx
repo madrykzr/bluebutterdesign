@@ -24,7 +24,7 @@ export default function HeroBlobs() {
 
   return (
     <div aria-hidden="true" className="pointer-events-none absolute inset-0 overflow-hidden">
-      {/* butter — warm tone (10–12%) */}
+      {/* butter, warm tone (10–12%) */}
       <motion.div
         className="absolute -top-32 -left-24 h-[480px] w-[520px] rounded-[45%_55%_60%_40%/55%_45%_55%_45%] bg-butter blur-3xl"
         style={{ opacity: 0.12 }}
@@ -35,7 +35,7 @@ export default function HeroBlobs() {
         style={{ opacity: 0.1 }}
         {...drift({ x: [0, 50, -20], y: [0, -40, -10] }, 24)}
       />
-      {/* blue-grey — cool tone (6–8%) */}
+      {/* blue-grey, cool tone (6–8%) */}
       <motion.div
         className="absolute top-1/4 -right-40 h-[520px] w-[560px] rounded-[55%_45%_40%_60%/45%_55%_45%_55%] bg-bluegrey blur-3xl"
         style={{ opacity: 0.08 }}

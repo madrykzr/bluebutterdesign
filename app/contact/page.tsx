@@ -28,7 +28,7 @@ export default function ContactPage() {
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-charcoal/70">
             Tell us a bit about your business and we&apos;ll reply within one
-            working day — with honest advice and a clear quote. No pressure, no
+            working day, with honest advice and a clear quote. No pressure, no
             tech-talk.
           </p>
         </AnimatedSection>
@@ -61,8 +61,8 @@ export default function ContactPage() {
                   Prefer WhatsApp? Same.
                 </h2>
                 <p className="mt-1.5 text-sm leading-relaxed text-white/85">
-                  Fastest way to reach us. Send a voice note if typing is leceh
-                  — we don&apos;t mind.
+                  Fastest way to reach us. Send a voice note if typing is leceh,
+                  we don&apos;t mind.
                 </p>
                 <p className="mt-4 font-heading text-sm font-semibold">
                   {site.whatsappLabel} →
@@ -80,7 +80,7 @@ export default function ContactPage() {
                   {site.phone}
                 </a>
                 <p className="mt-2 text-xs text-charcoal/50">
-                  Call or text — Mon–Sat, 9am–7pm Malaysia time.
+                  Call or text, Mon–Sat, 9am–7pm Malaysia time.
                 </p>
               </div>
 
@@ -128,7 +128,7 @@ export default function ContactPage() {
                 </h2>
                 <p className="mt-2 text-sm leading-relaxed text-charcoal/70">
                   Every enquiry gets a reply within one working day. Usually
-                  much faster — unless we&apos;re mid-kopi.
+                  much faster, unless we&apos;re mid-kopi.
                 </p>
               </div>
             </div>

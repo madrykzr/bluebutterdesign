@@ -25,7 +25,7 @@ export default function Error({
           Something went a bit wobbly.
         </h1>
         <p className="mt-4 max-w-md text-charcoal/70">
-          Not your fault — something on our side slipped. Try again, and if it
+          Not your fault, something on our side slipped. Try again, and if it
           keeps happening, drop us a message so we can fix it.
         </p>
         <div className="mt-8 flex flex-wrap justify-center gap-3">

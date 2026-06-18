@@ -20,7 +20,7 @@ const options: AutomationOption[] = [
     monthly: "RM0 / month",
     bestFor: "Most businesses",
     description:
-      "We build your form to talk directly to free Google tools. One-time setup by us, zero subscription fees — forever.",
+      "We build your form to talk directly to free Google tools. One-time setup by us, zero subscription fees, forever.",
     items: [
       "Custom web form → Google Sheets (auto-saves every enquiry)",
       "Google Calendar (auto-creates bookings)",
@@ -66,7 +66,7 @@ export default function AutomationSection({ compact = false }: { compact?: boole
         <SectionHeading
           eyebrow="Automation & Integration"
           title="Let your website do the admin work"
-          description="Enquiries, bookings and follow-ups — handled automatically while you run your business. Pick the option that fits your budget. We'll recommend honestly."
+          description="Enquiries, bookings and follow-ups, handled automatically while you run your business. Pick the option that fits your budget. We'll recommend honestly."
         />
 
         <div className="grid gap-6 lg:grid-cols-3">
@@ -135,8 +135,8 @@ export default function AutomationSection({ compact = false }: { compact?: boole
                   <p className="mt-2 max-w-xl text-sm leading-relaxed text-charcoal/70">
                     Selling online? We can connect a payment gateway so customers pay
                     directly on your site. Available as an add-on for e-commerce
-                    projects. <strong>Simple landing pages don&apos;t need this</strong> —
-                    we&apos;ll tell you honestly if you can skip it.
+                    projects. <strong>Simple landing pages don&apos;t need this.</strong>{" "}
+                    We&apos;ll tell you honestly if you can skip it.
                   </p>
                 </div>
                 <ul className="flex flex-wrap gap-2 md:max-w-xs md:justify-end">

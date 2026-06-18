@@ -28,7 +28,7 @@ export default function Navbar() {
         aria-label="Main navigation"
       >
         {/* Logo */}
-        <Link href="/" className="flex shrink-0 items-center gap-2" aria-label="Bluebutter Design — home">
+        <Link href="/" className="flex shrink-0 items-center gap-2" aria-label="Bluebutter Design, home">
           <Image
             src="/logo.png"
             alt="Bluebutter Design logo"

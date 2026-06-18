@@ -40,7 +40,7 @@ export default function MarqueeStrip({
   return (
     <div
       className={`relative overflow-hidden py-3.5 ${variants[variant]} ${className}`}
-      aria-label="Bluebutter Design — web design and development across Malaysia"
+      aria-label="Bluebutter Design, web design and development across Malaysia"
     >
       <Marquee speed={speed} direction={direction} autoFill gradient={false}>
         {items.map((item, i) => (

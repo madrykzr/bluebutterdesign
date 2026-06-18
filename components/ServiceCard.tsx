@@ -41,7 +41,7 @@ export default function ServiceCard({
         href={href}
         className="group relative flex h-full flex-col overflow-hidden rounded-[28px] border border-charcoal/8 bg-white p-7 shadow-card transition-shadow duration-300 hover:border-butter hover:shadow-butter-lg"
       >
-        {/* mascot peek — slides up from the bottom-right corner on hover */}
+        {/* mascot peek, slides up from the bottom-right corner on hover */}
         <div
           aria-hidden="true"
           className="pointer-events-none absolute -bottom-6 -right-4 w-24 translate-y-10 opacity-0 transition-all duration-500 group-hover:translate-y-0 group-hover:opacity-100"
@@ -67,7 +67,7 @@ export default function ServiceCard({
 
         {bestFor && (
           <p className="mt-5 font-mono text-[11px] uppercase tracking-mono text-bluegrey">
-            Best for — {bestFor}
+            Best for {bestFor}
           </p>
         )}
         <span className="relative z-10 mt-4 inline-flex items-center gap-1.5 font-heading text-sm font-medium text-bluegrey-dark">

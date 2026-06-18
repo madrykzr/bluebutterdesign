@@ -27,12 +27,12 @@ const jetbrains = JetBrains_Mono({
   display: "swap",
 });
 
-const defaultTitle = `${site.name} — Web Design & Development Malaysia`;
+const defaultTitle = `${site.name}, Web Design & Development Malaysia`;
 const ogImage = {
   url: "/og-image.png",
   width: 1200,
   height: 630,
-  alt: `${site.name} — Web Design & Development · Malaysia`,
+  alt: `${site.name}, Web Design & Development · Malaysia`,
 };
 
 export const metadata: Metadata = {
@@ -95,7 +95,7 @@ export const metadata: Metadata = {
   },
 };
 
-/** ProfessionalService schema — applied site-wide via the root layout so
+/** ProfessionalService schema, applied site-wide via the root layout so
  * every page (including the homepage and /contact, as specified) carries
  * the structured data. */
 const jsonLd = {

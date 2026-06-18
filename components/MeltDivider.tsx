@@ -12,7 +12,7 @@ type MeltDividerProps = {
 };
 
 /**
- * Signature Bluebutter section divider — a wavy "melting drip" edge with
+ * Signature Bluebutter section divider, a wavy "melting drip" edge with
  * thin strands that animate downward when scrolled into view, like butter
  * melting off the section above. Pure SVG, no image files.
  */

@@ -255,7 +255,7 @@ function Tile({
     <Link
       href={linkHref}
       {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-      aria-label={`${linkLabel} — ${project.title}`}
+      aria-label={`${linkLabel}, ${project.title}`}
       className={`flex h-12 w-12 shrink-0 items-center justify-center rounded-full border transition-colors ${t.arrow}`}
       draggable={false}
     >
@@ -273,7 +273,7 @@ function Tile({
       transition={{ duration: 0.4, ease: [0.21, 0.47, 0.32, 0.98] }}
     >
       <div className={`flex h-full flex-col gap-6 rounded-[28px] p-5 sm:p-7 ${t.bg}`}>
-        {/* clean device-neutral image card — no chrome */}
+        {/* clean device-neutral image card, no chrome */}
         <div className="relative overflow-hidden rounded-2xl bg-white shadow-card">
           {project.demo && (
             <span
@@ -307,7 +307,7 @@ function Tile({
             <Link
               href={linkHref}
               {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-              aria-label={`${linkLabel} — ${project.title}`}
+              aria-label={`${linkLabel}, ${project.title}`}
               draggable={false}
               className={`mt-3 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-mono transition-opacity hover:opacity-70 ${t.cat}`}
             >

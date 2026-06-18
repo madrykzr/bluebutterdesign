@@ -8,7 +8,7 @@ import { pricingDisclaimer, type Package } from "@/lib/packages";
 
 /**
  * Sticky-note pricing card. The "Most Popular" sticker protrudes above the
- * card's top edge — the parent scroller MUST have enough top padding for it
+ * card's top edge, the parent scroller MUST have enough top padding for it
  * not to clip (see DragScroller / page-level pt-12).
  *
  * Card body: From-price + range sublabel + features (first 6–8 visible) +
@@ -66,7 +66,7 @@ export default function PricingCard({ pkg, index }: { pkg: Package; index?: stri
       <p className="mt-5 text-base leading-relaxed text-charcoal/70">{pkg.description}</p>
 
       <p className="mt-5 font-mono text-xs uppercase tracking-mono text-bluegrey-dark">
-        Best for — {pkg.bestFor}
+        Best for {pkg.bestFor}
       </p>
 
       {/* Visible features */}
@@ -134,7 +134,7 @@ export default function PricingCard({ pkg, index }: { pkg: Package; index?: stri
 
       {/* Delivery */}
       <p className="mt-3 font-mono text-[11px] uppercase tracking-mono text-charcoal/55">
-        Delivery — {pkg.delivery}
+        Delivery {pkg.delivery}
       </p>
 
       {/* Optional footnote (e.g. e-commerce gateway add-on) */}

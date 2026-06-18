@@ -37,7 +37,7 @@ export default function ServicePageTemplate({
             <Label>Services / {service.name}</Label>
             <h1
               className="mt-5 wordmark text-charcoal"
-              style={{ fontSize: "clamp(2.5rem, 7vw, 5.5rem)" }}
+              style={{ fontSize: "clamp(2.25rem, 6vw, 4.75rem)", lineHeight: 1.02 }}
             >
               {service.headline}
             </h1>
@@ -133,7 +133,7 @@ export default function ServicePageTemplate({
             <SectionHeading
               eyebrow="Pricing"
               title={additionalPackages?.length ? "Choose your tier" : `What the ${service.name} costs`}
-              description="One-time payment — the price you agree is the price you pay. No hidden fees, no subscriptions."
+              description="One-time payment, the price you agree is the price you pay. No hidden fees, no subscriptions."
             />
             {additionalPackages?.length ? (
               <div className="mx-auto grid max-w-2xl gap-6 sm:grid-cols-2">
@@ -191,7 +191,7 @@ export default function ServicePageTemplate({
           <SectionHeading
             eyebrow="FAQ"
             title="Questions we hear a lot"
-            description="Still unsure about something? Just WhatsApp us — no question is too small."
+            description="Still unsure about something? Just WhatsApp us, no question is too small."
           />
           <AnimatedSection>
             <Faq items={service.faq} />

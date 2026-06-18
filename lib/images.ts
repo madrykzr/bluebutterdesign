@@ -1,5 +1,5 @@
 /**
- * Images manifest — every illustration and mockup the site expects.
+ * Images manifest, every illustration and mockup the site expects.
  *
  * Drop the real PNG files directly into /public using these exact filenames
  * and the placeholders will be replaced automatically (no code changes needed).

@@ -27,7 +27,7 @@ const overview = [
   {
     title: "Starter Pack Landing Page",
     description:
-      "One page online in 48 hours — contact info, WhatsApp button, free hosting. Fixed RM 200, no domain needed.",
+      "One page online in 48 hours, contact info, WhatsApp button, free hosting. Fixed RM 200, no domain needed.",
     href: "/services/starter-pack-landing-page",
     bestFor: "Home businesses, pop-ups, side hustles",
     rotate: -2,
@@ -54,7 +54,7 @@ const overview = [
   {
     title: "Corporate Website",
     description:
-      "A polished multi-page presence with blog and analytics — for companies that get googled before the deal closes.",
+      "A polished multi-page presence with blog and analytics, for companies that get googled before the deal closes.",
     href: "/services/corporate-website",
     bestFor: "Established SMEs & agencies",
     rotate: 1,
@@ -63,7 +63,7 @@ const overview = [
   {
     title: "E-Commerce",
     description:
-      "Your own online store with Malaysian payment gateways — no marketplace commission eating your margin.",
+      "Your own online store with Malaysian payment gateways, no marketplace commission eating your margin.",
     href: "/services/e-commerce",
     bestFor: "Retail shops & product brands",
     rotate: -1,
@@ -88,7 +88,7 @@ export default function ServicesPage() {
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-charcoal/70">
               Five packages, all custom-designed, all one-time payment.
-              Start small and upgrade anytime — we build every site on the same
+              Start small and upgrade anytime, we build every site on the same
               solid foundation.
             </p>
             <div className="mt-6 flex flex-wrap gap-3">
@@ -99,7 +99,7 @@ export default function ServicesPage() {
         </div>
       </section>
 
-      {/* Overview grid — staggered, rotated */}
+      {/* Overview grid, staggered, rotated */}
       <section className="bg-cream pb-20 md:pb-24">
         <div className="mx-auto grid max-w-6xl gap-6 px-4 sm:grid-cols-2 md:px-6 lg:grid-cols-3 xl:grid-cols-5">
           {overview.map((service, i) => (
@@ -124,7 +124,7 @@ export default function ServicesPage() {
 
       <MeltDivider from="#FAFAF7" to="#FAF5E8" />
 
-      {/* Full packages — horizontal sticky-note stack. pt-16 reserves room
+      {/* Full packages, horizontal sticky-note stack. pt-16 reserves room
           for the "Most Popular" sticker that protrudes above the cards. */}
       <section id="packages" className="bg-buttermilk pb-20 pt-16 md:pb-28 md:pt-20">
         <div className="mx-auto max-w-7xl px-4 md:px-6">
@@ -133,7 +133,7 @@ export default function ServicesPage() {
             index="05"
             eyebrow="Packages & pricing"
             title="Honest prices in MYR, everything spelled out"
-            description="One-time payment — your website is yours. Tap the 'more features' link inside any card to see everything included."
+            description="One-time payment, your website is yours. Tap the 'more features' link inside any card to see everything included."
           />
         </div>
         <div className="mx-auto max-w-7xl px-4 md:px-6">
@@ -155,7 +155,7 @@ export default function ServicesPage() {
                 WhatsApp
               </a>{" "}
               and we&apos;ll recommend the cheapest option that genuinely fits.
-              Sometimes that&apos;s the smallest one — and we&apos;ll say so.
+              Sometimes that&apos;s the smallest one, and we&apos;ll say so.
             </p>
           </div>
         </AnimatedSection>

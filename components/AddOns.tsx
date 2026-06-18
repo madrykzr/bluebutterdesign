@@ -24,14 +24,14 @@ const addOns: AddOn[] = [
     price: "From RM 500",
     unit: "one-time · e-commerce",
     description:
-      "Stripe, Billplz, toyyibPay, SenangPay or iPay88 — we recommend the best fit for your business and bank.",
+      "Stripe, Billplz, toyyibPay, SenangPay or iPay88, we recommend the best fit for your business and bank.",
   },
   {
     title: "Extra page",
     price: "RM 200",
     unit: "per page",
     description:
-      "Need more than the base package allows? Add custom-designed pages anytime — same care, same speed.",
+      "Need more than the base package allows? Add custom-designed pages anytime, same care, same speed.",
   },
   {
     title: "Logo design",

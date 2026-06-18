@@ -4,12 +4,12 @@ const steps = [
   {
     title: "Chat & understand",
     description:
-      "We start with a relaxed chat — WhatsApp, call, or kopi if you're nearby. We learn about your business, your customers, and what you actually need (not what's trendy).",
+      "We start with a relaxed chat, WhatsApp, call, or kopi if you're nearby. We learn about your business, your customers, and what you actually need (not what's trendy).",
   },
   {
     title: "Plan & quote",
     description:
-      "You get a clear, fixed quote with everything spelled out — pages, features, timeline. No hidden costs, no surprise invoices later.",
+      "You get a clear, fixed quote with everything spelled out, pages, features, timeline. No hidden costs, no surprise invoices later.",
   },
   {
     title: "Design",
@@ -19,7 +19,7 @@ const steps = [
   {
     title: "Build",
     description:
-      "We code your site with modern tools — fast, mobile-friendly, and SEO-ready from the first line. You'll get a preview link to watch progress.",
+      "We code your site with modern tools, fast, mobile-friendly, and SEO-ready from the first line. You'll get a preview link to watch progress.",
   },
   {
     title: "Launch & handover",
@@ -29,7 +29,7 @@ const steps = [
   {
     title: "Support",
     description:
-      "We don't disappear after launch. Questions, small tweaks, or future upgrades — just message us. We reply like humans, not ticket systems.",
+      "We don't disappear after launch. Questions, small tweaks, or future upgrades, just message us. We reply like humans, not ticket systems.",
   },
 ];
 

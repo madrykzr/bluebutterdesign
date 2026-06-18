@@ -1,11 +1,11 @@
 import AnimatedSection from "@/components/AnimatedSection";
 import SectionHeading from "@/components/SectionHeading";
 
-// Placeholder testimonials — replace with real client quotes as they come in.
+// Placeholder testimonials, replace with real client quotes as they come in.
 const testimonials = [
   {
     quote:
-      "First time ever building a website, and I had no idea it could look this professional, this clean, this modern — at this price. Honestly thought something like this would cost RM 10k. Bluebutter completely changed my expectation.",
+      "First time ever building a website, and I had no idea it could look this professional, this clean, this modern, at this price. Honestly thought something like this would cost RM 10k. Bluebutter completely changed my expectation.",
     name: "Parallel Records",
     business: "Music studio, KL",
   },
@@ -30,7 +30,7 @@ export default function Testimonials() {
         <SectionHeading
           eyebrow="Kind words"
           title="What clients say about working with us"
-          description="Real feedback from real Malaysian business owners. (More coming soon — we're a young studio with old-school work ethics.)"
+          description="Real feedback from real Malaysian business owners. (More coming soon, we're a young studio with old-school work ethics.)"
         />
         <div className="grid gap-6 md:grid-cols-3">
           {testimonials.map((t, i) => (

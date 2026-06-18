@@ -16,7 +16,7 @@ const variants = {
 };
 
 /**
- * Small rotated sticker/badge pill — punctuation for key moments
+ * Small rotated sticker/badge pill, punctuation for key moments
  * ("RM0/mo", "MADE IN MALAYSIA", "EST. 2026"). Mono type by design.
  */
 export default function Sticker({

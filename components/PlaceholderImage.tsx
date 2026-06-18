@@ -17,7 +17,7 @@ type PlaceholderImageProps = {
 /**
  * Renders the real image via next/image once the file exists in /public.
  * Until then, shows a butter-tinted placeholder labelled with the
- * expected filename — drop the PNG in and it appears automatically.
+ * expected filename, drop the PNG in and it appears automatically.
  */
 export default function PlaceholderImage({
   src,

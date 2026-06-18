@@ -20,7 +20,7 @@ export default function CtaBand({ from = "#FAFAF7" }: { from?: string }) {
               Ready when you are
             </p>
             <h2 className="mt-3 text-3xl font-semibold leading-tight text-cream md:text-4xl">
-              Let&apos;s get your business online — the easy way
+              Let&apos;s get your business online, the easy way
             </h2>
             <p className="mt-4 text-base leading-relaxed text-cream/70 md:text-lg">
               Tell us about your business over WhatsApp or the contact form.

@@ -2,7 +2,7 @@ import AnimatedSection from "@/components/AnimatedSection";
 
 /**
  * Small inline explainer that sits right under the pricing cards.
- * Not its own section — drops into whatever background it's placed on.
+ * Not its own section, drops into whatever background it's placed on.
  */
 export default function WhyPriceRange({ className = "" }: { className?: string }) {
   return (
@@ -17,7 +17,7 @@ export default function WhyPriceRange({ className = "" }: { className?: string }
         <p className="mt-3 text-sm leading-relaxed text-charcoal/75 md:text-base">
           Every business is different. A 3-page cafe website is simpler than a
           5-page boutique with online booking. We give you a clear quote after a
-          quick chat — no hidden fees, no surprises. The price you agree on is
+          quick chat, no hidden fees, no surprises. The price you agree on is
           the price you pay.
         </p>
       </div>

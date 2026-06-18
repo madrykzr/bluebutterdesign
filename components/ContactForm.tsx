@@ -61,7 +61,7 @@ export default function ContactForm() {
     return Object.keys(next).length === 0;
   };
 
-  // ─── SUCCESS state — replace form with mascot + heading ──────
+  // ─── SUCCESS state, replace form with mascot + heading ──────
   if (state.status === "success") {
     return (
       <motion.div
@@ -112,7 +112,7 @@ export default function ContactForm() {
       noValidate
       className="space-y-5"
     >
-      {/* Error toast — shows above the form when server returns error */}
+      {/* Error toast, shows above the form when server returns error */}
       {state.status === "error" && (
         <motion.div
           initial={{ opacity: 0, y: -8 }}
@@ -228,7 +228,7 @@ export default function ContactForm() {
           id="message"
           name="message"
           rows={5}
-          placeholder="What does your business do? What should the website help you with — more bookings, more walk-ins, selling online?"
+          placeholder="What does your business do? What should the website help you with, more bookings, more walk-ins, selling online?"
           className={inputClasses(false)}
         />
       </Field>
@@ -276,7 +276,7 @@ export default function ContactForm() {
           )}
         </button>
         <p className="text-xs text-charcoal/55">
-          We reply within one working day. Your details stay with us — no spam,
+          We reply within one working day. Your details stay with us, no spam,
           ever.
         </p>
       </div>
@@ -288,7 +288,7 @@ export default function ContactForm() {
             Prefer to chat first?
           </p>
           <p className="mt-1 text-sm leading-relaxed text-charcoal/75">
-            Send us a quick WhatsApp — voice notes welcome.
+            Send us a quick WhatsApp, voice notes welcome.
           </p>
         </div>
         <a

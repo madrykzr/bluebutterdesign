@@ -49,7 +49,7 @@ const sizes = {
 };
 
 /**
- * Magnetic button — the wrapper gently follows the cursor within ~10px on
+ * Magnetic button, the wrapper gently follows the cursor within ~10px on
  * hover, with a butter-coloured fill that sweeps in from the left. Keeps the
  * original API; uses next/link for internal routes, <a> for external.
  */

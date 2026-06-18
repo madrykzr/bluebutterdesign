@@ -26,7 +26,7 @@ const hasEnoughDigits = (s: string) => (s.match(/\d/g)?.length ?? 0) >= 7;
 /**
  * Receives the contact form, validates, then POSTs to a Google Apps Script
  * Web App that appends a row to a Google Sheet (the "Budget Smart" setup we
- * recommend to clients — free, no monthly fee).
+ * recommend to clients, free, no monthly fee).
  *
  * Setup steps live in docs/google-apps-script-setup.md.
  */
@@ -67,14 +67,14 @@ export async function submitContactForm(
   // the form still feels responsive during development.
   if (!endpoint || endpoint.includes("REPLACE_ME")) {
     console.warn(
-      "[contact] GOOGLE_APPS_SCRIPT_URL is not configured — logging instead of saving. " +
+      "[contact] GOOGLE_APPS_SCRIPT_URL is not configured, logging instead of saving. " +
         "Run the setup in docs/google-apps-script-setup.md."
     );
     console.log("[contact] enquiry:", { ...data, ts: new Date().toISOString() });
     return {
       status: "success",
       message:
-        "Thanks! We received your enquiry — we'll WhatsApp you within 24 hours.",
+        "Thanks! We received your enquiry, we'll WhatsApp you within 24 hours.",
     };
   }
 
@@ -101,14 +101,14 @@ export async function submitContactForm(
     return {
       status: "success",
       message:
-        "Thanks! We received your enquiry — we'll WhatsApp you within 24 hours.",
+        "Thanks! We received your enquiry, we'll WhatsApp you within 24 hours.",
     };
   } catch (err) {
     console.error("[contact] failed to forward to Apps Script:", err);
     return {
       status: "error",
       message:
-        "Something went wrong on our side. Please WhatsApp us instead — we'll reply fast.",
+        "Something went wrong on our side. Please WhatsApp us instead, we'll reply fast.",
     };
   }
 }
