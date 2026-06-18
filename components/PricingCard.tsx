@@ -26,10 +26,10 @@ export default function PricingCard({ pkg, index }: { pkg: Package; index?: stri
       initial={{ rotate: rest, scale }}
       whileHover={{ rotate: 0, scale: scale + 0.02, y: -8 }}
       transition={{ type: "spring", stiffness: 240, damping: 18 }}
-      className={`relative z-10 flex flex-col rounded-[28px] border bg-white p-7 ${
+      className={`relative z-10 flex flex-col rounded-[28px] border bg-white p-8 md:p-10 ${
         pkg.popular
           ? "border-butter-dark shadow-butter-lg ring-2 ring-butter"
-          : "border-charcoal/8 shadow-card"
+          : "border-charcoal/[.13] shadow-card"
       }`}
     >
       {pkg.popular && (
@@ -46,33 +46,33 @@ export default function PricingCard({ pkg, index }: { pkg: Package; index?: stri
         <p className="font-mono text-[11px] uppercase tracking-mono text-bluegrey">{pkg.name}</p>
         {index && <span className="font-mono text-[11px] text-charcoal/30">{index}</span>}
       </div>
-      <h3 className="mt-1 font-heading text-xl font-semibold text-charcoal">{pkg.subtitle}</h3>
+      <h3 className="mt-2 font-heading text-2xl font-bold text-charcoal">{pkg.subtitle}</h3>
 
       {/* Price block */}
       <p
-        className="mt-5 font-heading font-bold text-charcoal"
-        style={{ fontSize: "clamp(1.4rem, 3.5vw, 1.9rem)", lineHeight: 1.1 }}
+        className="mt-6 font-heading font-black text-charcoal"
+        style={{ fontSize: "clamp(2rem, 4.5vw, 2.75rem)", lineHeight: 1.05 }}
       >
         {pkg.priceFrom}
       </p>
-      <p className="mt-1 font-mono text-[11px] uppercase tracking-mono text-charcoal/45">
+      <p className="mt-1 font-mono text-xs uppercase tracking-mono text-charcoal/45">
         {pkg.priceNote}
       </p>
-      <p className="mt-2 font-mono text-[11px] leading-snug text-charcoal/60">
+      <p className="mt-1.5 font-mono text-xs leading-snug text-charcoal/60">
         {pkg.priceRange}{" "}
         <span className="text-charcoal/40">{pkg.rangeNote}</span>
       </p>
 
-      <p className="mt-4 text-sm leading-relaxed text-charcoal/70">{pkg.description}</p>
+      <p className="mt-5 text-base leading-relaxed text-charcoal/70">{pkg.description}</p>
 
-      <p className="mt-4 font-mono text-[11px] uppercase tracking-mono text-bluegrey-dark">
+      <p className="mt-5 font-mono text-xs uppercase tracking-mono text-bluegrey-dark">
         Best for — {pkg.bestFor}
       </p>
 
       {/* Visible features */}
-      <ul className="mt-5 space-y-2.5">
+      <ul className="mt-6 space-y-3">
         {pkg.visibleFeatures.map((feature) => (
-          <li key={feature} className="flex items-start gap-2.5 text-sm text-charcoal/85">
+          <li key={feature} className="flex items-start gap-3 text-sm text-charcoal/85">
             <CheckIcon />
             <span>{feature}</span>
           </li>
@@ -97,14 +97,14 @@ export default function PricingCard({ pkg, index }: { pkg: Package; index?: stri
               </span>
               <span className="h-px flex-1 bg-charcoal/15" aria-hidden="true" />
             </div>
-            <ul className="mt-4 space-y-2.5">
+            <ul className="mt-4 space-y-3">
               {pkg.moreFeatures.map((feature, i) => (
                 <motion.li
                   key={feature}
                   initial={reduce ? { opacity: 1, y: 0 } : { opacity: 0, y: 8 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.05 + i * 0.04, duration: 0.3 }}
-                  className="flex items-start gap-2.5 text-sm text-charcoal/85"
+                  className="flex items-start gap-3 text-sm text-charcoal/85"
                 >
                   <CheckIcon />
                   <span>{feature}</span>
@@ -161,7 +161,7 @@ export default function PricingCard({ pkg, index }: { pkg: Package; index?: stri
 function CheckIcon() {
   return (
     <svg
-      className="mt-0.5 h-4 w-4 shrink-0 text-bluegrey"
+      className="mt-0.5 h-5 w-5 shrink-0 text-bluegrey"
       fill="none"
       viewBox="0 0 24 24"
       stroke="currentColor"
