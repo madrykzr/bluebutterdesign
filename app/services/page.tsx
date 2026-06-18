@@ -127,7 +127,7 @@ export default function ServicesPage() {
       {/* Full packages — horizontal sticky-note stack. pt-16 reserves room
           for the "Most Popular" sticker that protrudes above the cards. */}
       <section id="packages" className="bg-buttermilk pb-20 pt-16 md:pb-28 md:pt-20">
-        <div className="mx-auto max-w-6xl px-4 md:px-6">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
           <SectionHeading
             align="left"
             index="05"
@@ -136,8 +136,8 @@ export default function ServicesPage() {
             description="One-time payment — your website is yours. Tap the 'more features' link inside any card to see everything included."
           />
         </div>
-        <div className="mx-auto max-w-6xl px-4 md:px-6">
-          <div className="grid grid-cols-1 gap-6 pt-16 sm:grid-cols-2 xl:grid-cols-5">
+        <div className="mx-auto max-w-7xl px-4 md:px-6">
+          <div className="grid grid-cols-1 gap-6 pt-16 sm:grid-cols-2 lg:grid-cols-3">
             {packages.map((pkg, i) => (
               <PricingCard key={pkg.name} pkg={pkg} index={String(i + 1).padStart(2, "0")} />
             ))}
