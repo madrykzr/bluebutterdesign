@@ -1,13 +1,11 @@
 import Button from "@/components/Button";
 import AnimatedSection from "@/components/AnimatedSection";
-import PlaceholderImage from "@/components/PlaceholderImage";
 import MeltDivider from "@/components/MeltDivider";
-import { images } from "@/lib/images";
 import { site } from "@/lib/site";
 import { WhatsAppIcon } from "@/components/Navbar";
 
 /**
- * Dark charcoal CTA band with the mascot peeking from the corner.
+ * Dark charcoal CTA band with a headline and call-to-action buttons.
  * `from` should match the background colour of the section above so the
  * melt divider carries that tone down into the dark band.
  */
@@ -39,17 +37,6 @@ export default function CtaBand({ from = "#FAFAF7" }: { from?: string }) {
               </Button>
             </div>
           </AnimatedSection>
-        </div>
-
-        {/* Mascot peeking from the bottom-right corner */}
-        <div className="pointer-events-none absolute -bottom-2 right-4 hidden w-40 md:block lg:right-16 lg:w-52" aria-hidden="true">
-          <PlaceholderImage
-            src={images.mascotPeek.src}
-            alt=""
-            width={images.mascotPeek.width}
-            height={images.mascotPeek.height}
-            fallbackClassName="!bg-charcoal-light !border-cream/20"
-          />
         </div>
       </div>
       <MeltDivider from="#2E3440" to="#FAFAF7" />

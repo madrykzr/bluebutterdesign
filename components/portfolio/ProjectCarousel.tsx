@@ -304,9 +304,15 @@ function Tile({
               {project.title}
             </h3>
             <p className={`mt-2 text-sm leading-relaxed ${t.sub}`}>{project.description}</p>
-            <span className={`mt-3 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-mono ${t.cat}`}>
+            <Link
+              href={linkHref}
+              {...(isExternal ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              aria-label={`${linkLabel} — ${project.title}`}
+              draggable={false}
+              className={`mt-3 inline-flex items-center gap-2 font-mono text-[11px] uppercase tracking-mono transition-opacity hover:opacity-70 ${t.cat}`}
+            >
               {linkLabel}
-            </span>
+            </Link>
           </div>
           {ArrowLink}
         </div>

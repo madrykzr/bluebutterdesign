@@ -66,7 +66,7 @@ export const images = {
     height: 640,
   },
   portfolioDemoPhotographer: {
-    src: "/demos/lumen-loom/preview.png",
+    src: "/portfolio-demo-photographer.png",
     alt: "Demo concept website for a minimal photography studio",
     width: 960,
     height: 640,
