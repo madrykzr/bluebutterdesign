@@ -10,8 +10,6 @@ export type Project = {
   description: string;
   image: SiteImage;
   href?: string;
-  /** path to the pre-built demo index.html inside /public */
-  demoPath?: string;
   demo: boolean;
   tint: ProjectTint;
   /** show on the homepage "Selected Work" teaser */
@@ -36,7 +34,7 @@ export const projects: Project[] = [
     category: "Cafe — Demo",
     description: "A warm kedai kopi concept with menu and one-tap table bookings.",
     image: images.portfolioDemoCafe,
-    demoPath: "/demos/kopi-co/kopi-&-co-demo/index.html",
+    href: "https://demokopico.vercel.app/",
     demo: true,
     tint: "bluegrey",
     featured: true,
@@ -47,7 +45,7 @@ export const projects: Project[] = [
     category: "Boutique — Demo",
     description: "An elegant boutique concept with a lookbook and WhatsApp enquiries.",
     image: images.portfolioDemoBoutique,
-    demoPath: "/demos/atelier-mawar/atelier-mawar-demo/index.html",
+    href: "https://demoatelier-mawar.vercel.app/",
     demo: true,
     tint: "cream",
     featured: true,
@@ -58,7 +56,7 @@ export const projects: Project[] = [
     category: "Barber — Demo",
     description: "A bold barbershop concept with price list and slot booking.",
     image: images.portfolioDemoBarber,
-    demoPath: "/demos/sharp-co/sharp-&-co.-barbers/index.html",
+    href: "https://sharp-co-barbers-bluebutterdesign.vercel.app/",
     demo: true,
     tint: "charcoal",
     featured: true,
@@ -69,7 +67,7 @@ export const projects: Project[] = [
     category: "Pet Shop — Demo",
     description: "A friendly pet shop concept with grooming bookings and a catalog.",
     image: images.portfolioDemoPetshop,
-    demoPath: "/demos/whiskerville/whiskerville-pet-shop-demo/index.html",
+    href: "https://demo-whiskerville-bluebutterdesign.vercel.app/",
     demo: true,
     tint: "bluegrey",
     featured: false,
@@ -80,7 +78,7 @@ export const projects: Project[] = [
     category: "Photographer — Demo",
     description: "Minimal photography portfolio with gallery.",
     image: images.portfolioDemoPhotographer,
-    demoPath: "/demos/lumen-loom/lumen-&-loom/index.html",
+    href: "https://lumen-loom-bluebutterdesign.vercel.app/",
     demo: true,
     tint: "cream",
     featured: true,

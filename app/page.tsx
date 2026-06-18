@@ -7,7 +7,6 @@ import CtaBand from "@/components/CtaBand";
 import HeroHome from "@/components/HeroHome";
 import MarqueeStrip from "@/components/MarqueeStrip";
 import MeltDivider from "@/components/MeltDivider";
-import PortfolioTeaser from "@/components/PortfolioTeaser";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
 import TechStackStrip from "@/components/TechStackStrip";
@@ -148,10 +147,6 @@ export default function HomePage() {
           </AnimatedSection>
         </div>
       </section>
-
-      {/* ── Portfolio teaser ───────────────────────────────── */}
-      <MeltDivider from="#FAF5E8" to="#FAFAF7" />
-      <PortfolioTeaser />
 
       {/* marquee #2 — social proof, charcoal, scrolling right, slower */}
       <MarqueeStrip items={socialProof} speed={32} direction="right" variant="charcoal" />

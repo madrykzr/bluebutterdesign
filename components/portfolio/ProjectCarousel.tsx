@@ -248,8 +248,8 @@ function Tile({
 }) {
   const t = tintStyles[project.tint];
   const isExternal = Boolean(project.href);
-  const linkHref = project.href ?? (project.demoPath ? `/portfolio/${project.slug}` : "/contact");
-  const linkLabel = project.href ? "View Project" : (project.demoPath ? "Preview demo" : "Discuss your project");
+  const linkHref = project.href ?? "/contact";
+  const linkLabel = isExternal ? "View Project" : "View concept";
 
   const ArrowLink = (
     <Link
