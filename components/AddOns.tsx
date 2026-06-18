@@ -21,7 +21,7 @@ const addOns: AddOn[] = [
   },
   {
     title: "Payment Gateway Setup",
-    price: "From RM 800",
+    price: "From RM 500",
     unit: "one-time · e-commerce",
     description:
       "Stripe, Billplz, toyyibPay, SenangPay or iPay88 — we recommend the best fit for your business and bank.",
@@ -87,8 +87,8 @@ export default function AddOns({ index = "07" }: AddOnsProps) {
                   {addon.title}
                 </h3>
                 <p
-                  className="mt-3 whitespace-nowrap font-heading font-bold text-charcoal"
-                  style={{ fontSize: "clamp(1.25rem, 3vw, 1.5rem)", lineHeight: 1.1 }}
+                  className="mt-3 font-heading font-bold text-charcoal"
+                  style={{ fontSize: "clamp(1.2rem, 2.5vw, 1.5rem)", lineHeight: 1.1 }}
                 >
                   {addon.price}
                 </p>

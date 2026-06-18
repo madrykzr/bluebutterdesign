@@ -25,14 +25,14 @@ const reasons = [
       "No jargon, no acronyms thrown around to sound clever. We explain everything the way we'd explain it to our own mak — clearly, patiently, in plain English (or Bahasa).",
   },
   {
-    title: "Fixed prices, no surprises",
+    title: "Clear quotes, zero hidden fees",
     description:
-      "You get one clear quote before we start. No hourly billing that balloons, no 'oh, that's extra' halfway through. The price we agree is the price you pay.",
+      "You get one honest quote before we start. Want to add extra features or pages later? We'll always tell you the cost upfront before doing any work — you stay in full control, no surprises mid-project.",
   },
   {
-    title: "Built to own, not rent",
+    title: "Your site, your choice",
     description:
-      "Your website is yours. We favour RM0/month setups using free Google tools, so you're not stuck paying subscriptions forever just to keep your own site running.",
+      "Your website is fully yours. Host it free on Vercel or Netlify, or use your own provider — your call. We build on a solid foundation so you're never locked in and never dependent on us just to keep things running.",
   },
   {
     title: "Modern stack, modern results",

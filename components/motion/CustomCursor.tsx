@@ -59,12 +59,12 @@ export default function CustomCursor() {
 
   if (!enabled) return null;
 
-  const size = hovering ? 56 : 14;
+  const size = hovering ? 48 : 12;
 
   return (
     <motion.div
       aria-hidden="true"
-      className="pointer-events-none fixed left-0 top-0 z-[9999] bg-butter mix-blend-multiply"
+      className="pointer-events-none fixed left-0 top-0 z-[9999] bg-butter opacity-80"
       style={{
         x,
         y,
@@ -74,18 +74,14 @@ export default function CustomCursor() {
       animate={{
         width: size,
         height: size,
-        opacity: hovering ? 0.85 : 1,
-        scale: down ? 0.8 : 1,
-        // melted-blob radius when hovering, round dot otherwise
-        borderRadius: hovering
-          ? ["48% 52% 60% 40% / 55% 45% 55% 45%", "55% 45% 45% 55% / 45% 55% 45% 55%"]
-          : "50%",
+        scale: down ? 0.75 : 1,
+        borderRadius: hovering ? "38% 62% 55% 45% / 50% 45% 55% 50%" : "50%",
       }}
       transition={{
-        width: { type: "spring", stiffness: 300, damping: 22 },
-        height: { type: "spring", stiffness: 300, damping: 22 },
-        borderRadius: { duration: 4, repeat: Infinity, repeatType: "mirror", ease: "easeInOut" },
-        default: { duration: 0.18 },
+        width: { type: "spring", stiffness: 600, damping: 32 },
+        height: { type: "spring", stiffness: 600, damping: 32 },
+        borderRadius: { type: "spring", stiffness: 120, damping: 20 },
+        default: { duration: 0.08 },
       }}
     />
   );

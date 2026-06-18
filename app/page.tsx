@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Link from "next/link";
 import AnimatedSection from "@/components/AnimatedSection";
 import AutomationSection from "@/components/AutomationSection";
 import Button from "@/components/Button";
@@ -7,14 +8,10 @@ import HeroHome from "@/components/HeroHome";
 import CursorMascot from "@/components/motion/CursorMascot";
 import MarqueeStrip from "@/components/MarqueeStrip";
 import MeltDivider from "@/components/MeltDivider";
-import ProjectCarousel from "@/components/portfolio/ProjectCarousel";
-import PricingCard from "@/components/PricingCard";
 import SectionHeading from "@/components/SectionHeading";
 import ServiceCard from "@/components/ServiceCard";
 import TechStackStrip from "@/components/TechStackStrip";
 import Testimonials from "@/components/Testimonials";
-import WhyPriceRange from "@/components/WhyPriceRange";
-import { featuredProjects } from "@/lib/portfolio";
 import { packages } from "@/lib/packages";
 import { site } from "@/lib/site";
 
@@ -118,56 +115,39 @@ export default function HomePage() {
 
       <MeltDivider from="#EEF2F8" to="#FAF5E8" />
 
-      {/* ── Selected work — editorial carousel ─────────────── */}
-      <section className="overflow-hidden bg-buttermilk py-20 md:py-28">
-        <div className="mx-auto mb-4 flex max-w-6xl flex-col gap-6 px-4 md:flex-row md:items-end md:justify-between md:px-6">
-          <SectionHeading
-            align="left"
-            index="03"
-            eyebrow="Selected work"
-            title="Real work, real businesses"
-            description="Drag, use the arrows, or tap the dots to explore."
-          />
-          <div className="shrink-0 md:pb-16">
-            <Button href="/portfolio" variant="secondary">
-              See all work →
-            </Button>
-          </div>
-        </div>
-        <ProjectCarousel projects={featuredProjects} ariaLabel="Selected Bluebutter Design work" />
-      </section>
-
       {/* ── Tech stack ─────────────────────────────────────── */}
       <TechStackStrip />
 
-      {/* ── Packages — horizontal sticky-note stack ────────── */}
-      <section className="relative bg-noise bg-cream pb-20 pt-16 md:pb-28 md:pt-20">
+      {/* ── Packages teaser → /services ────────────────────── */}
+      <section className="bg-noise bg-cream pb-20 pt-16 md:pb-28 md:pt-20">
         <div className="mx-auto max-w-6xl px-4 md:px-6">
           <SectionHeading
             align="left"
-            index="04"
+            index="03"
             eyebrow="Packages"
             title="Simple packages, honest prices"
-            description="Every package is one-time payment — your website is yours, no rental. Tap the “more features” link inside any card to see the full list."
+            description="One-time payment — no hidden fees, no monthly subscriptions. Pick what fits today, upgrade anytime."
           />
-        </div>
-        <div className="mx-auto max-w-6xl px-4 md:px-6">
-          <div className="grid grid-cols-1 gap-6 pt-16 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="mt-10 grid grid-cols-2 gap-4 sm:grid-cols-3 xl:grid-cols-5">
             {packages.map((pkg, i) => (
-              <PricingCard key={pkg.name} pkg={pkg} index={String(i + 1).padStart(2, "0")} />
+              <AnimatedSection key={pkg.name} delay={i * 0.08}>
+                <Link
+                  href={pkg.href}
+                  className="flex flex-col rounded-[20px] border border-charcoal/8 bg-white p-5 shadow-card transition-all duration-300 hover:-translate-y-1 hover:border-butter hover:shadow-butter"
+                >
+                  <p className="font-mono text-[10px] uppercase tracking-mono text-bluegrey">{pkg.name}</p>
+                  <p className="mt-2 font-heading text-xl font-bold leading-tight text-charcoal">{pkg.priceFrom}</p>
+                  <p className="mt-1 text-xs leading-snug text-charcoal/55">{pkg.subtitle}</p>
+                </Link>
+              </AnimatedSection>
             ))}
           </div>
+          <AnimatedSection delay={0.5} className="mt-8">
+            <Button href="/services#packages" variant="primary">
+              See full details & features →
+            </Button>
+          </AnimatedSection>
         </div>
-
-        <WhyPriceRange className="mt-12 px-4 md:px-6" />
-
-        <p className="mx-auto mt-8 max-w-6xl px-4 font-mono text-[11px] uppercase tracking-mono text-charcoal/50 md:px-6">
-          Not sure which fits?{" "}
-          <a href={site.whatsapp} target="_blank" rel="noopener noreferrer" className="text-bluegrey-dark underline">
-            WhatsApp us
-          </a>{" "}
-          — we recommend the cheapest option that genuinely works.
-        </p>
       </section>
 
       {/* marquee #2 — social proof, charcoal, scrolling right, slower */}

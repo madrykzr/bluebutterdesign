@@ -48,17 +48,17 @@ export default function PricingCard({ pkg, index }: { pkg: Package; index?: stri
       </div>
       <h3 className="mt-1 font-heading text-xl font-semibold text-charcoal">{pkg.subtitle}</h3>
 
-      {/* Price block — nowrap + clamp() so the "From RM X,XXX" never breaks */}
+      {/* Price block */}
       <p
-        className="mt-5 whitespace-nowrap font-heading font-bold text-charcoal"
-        style={{ fontSize: "clamp(1.5rem, 4.2vw, 2rem)", lineHeight: 1.05 }}
+        className="mt-5 font-heading font-bold text-charcoal"
+        style={{ fontSize: "clamp(1.4rem, 3.5vw, 1.9rem)", lineHeight: 1.1 }}
       >
         {pkg.priceFrom}
       </p>
       <p className="mt-1 font-mono text-[11px] uppercase tracking-mono text-charcoal/45">
         {pkg.priceNote}
       </p>
-      <p className="mt-2 whitespace-nowrap font-mono text-[11px] text-charcoal/60">
+      <p className="mt-2 font-mono text-[11px] leading-snug text-charcoal/60">
         {pkg.priceRange}{" "}
         <span className="text-charcoal/40">{pkg.rangeNote}</span>
       </p>

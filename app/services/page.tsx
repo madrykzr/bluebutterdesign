@@ -25,13 +25,22 @@ export const metadata: Metadata = {
 
 const overview = [
   {
+    title: "Promo Landing Page",
+    description:
+      "A simple promotional page live in 48 hours — your contact info, WhatsApp button, no domain needed. The most budget-friendly start.",
+    href: "/services/promo-landing-page",
+    bestFor: "Home businesses, pop-ups, side hustles",
+    rotate: -2,
+    offset: "lg:mt-0",
+  },
+  {
     title: "Landing Page",
     description:
       "One sharp, fast page with your story, services, photos and a WhatsApp button. The quickest way to look professional online.",
     href: "/services/landing-page",
     bestFor: "New & home-based businesses",
-    rotate: -1.5,
-    offset: "lg:mt-0",
+    rotate: 1.5,
+    offset: "lg:mt-10",
   },
   {
     title: "Business Website",
@@ -39,8 +48,8 @@ const overview = [
       "Up to 5 pages with booking forms, a CMS you update yourself, and full SEO. The sweet spot for most growing businesses.",
     href: "/services/business-website",
     bestFor: "Cafes, salons, studios, boutiques",
-    rotate: 1.5,
-    offset: "lg:mt-10",
+    rotate: -1.5,
+    offset: "lg:mt-0",
   },
   {
     title: "Corporate Website",
@@ -48,8 +57,8 @@ const overview = [
       "A polished multi-page presence with blog and analytics — for companies that get googled before the deal closes.",
     href: "/services/corporate-website",
     bestFor: "Established SMEs & agencies",
-    rotate: -1,
-    offset: "lg:mt-0",
+    rotate: 1,
+    offset: "lg:mt-10",
   },
   {
     title: "E-Commerce",
@@ -57,8 +66,8 @@ const overview = [
       "Your own online store with Malaysian payment gateways — no marketplace commission eating your margin.",
     href: "/services/e-commerce",
     bestFor: "Retail shops & product brands",
-    rotate: 1,
-    offset: "lg:mt-10",
+    rotate: -1,
+    offset: "lg:mt-0",
   },
 ];
 
@@ -78,7 +87,7 @@ export default function ServicesPage() {
               Pick the website that fits today
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-relaxed text-charcoal/70">
-              Four clear packages, all custom-designed, all one-time payment.
+              Five packages, all custom-designed, all one-time payment.
               Start small and upgrade anytime — we build every site on the same
               solid foundation.
             </p>
@@ -92,7 +101,7 @@ export default function ServicesPage() {
 
       {/* Overview grid — staggered, rotated */}
       <section className="bg-cream pb-20 md:pb-24">
-        <div className="mx-auto grid max-w-6xl gap-6 px-4 sm:grid-cols-2 md:px-6 lg:grid-cols-4">
+        <div className="mx-auto grid max-w-6xl gap-6 px-4 sm:grid-cols-2 md:px-6 lg:grid-cols-3 xl:grid-cols-5">
           {overview.map((service, i) => (
             <AnimatedSection key={service.href} delay={i * 0.1} className={`h-full ${service.offset}`}>
               <ServiceCard
@@ -124,11 +133,11 @@ export default function ServicesPage() {
             index="05"
             eyebrow="Packages & pricing"
             title="Honest prices in MYR, everything spelled out"
-            description="One-time payment — your website is yours, not rented. Tap the “more features” link inside any card to see everything that's included."
+            description="One-time payment — your website is yours. Tap the 'more features' link inside any card to see everything included."
           />
         </div>
         <div className="mx-auto max-w-6xl px-4 md:px-6">
-          <div className="grid grid-cols-1 gap-6 pt-16 sm:grid-cols-2 xl:grid-cols-4">
+          <div className="grid grid-cols-1 gap-6 pt-16 sm:grid-cols-2 xl:grid-cols-5">
             {packages.map((pkg, i) => (
               <PricingCard key={pkg.name} pkg={pkg} index={String(i + 1).padStart(2, "0")} />
             ))}

@@ -42,8 +42,11 @@ export default function PaymentOptions({ index = "06", dark = false }: PaymentOp
                 </div>
                 <Sticker rotate={-5} variant="charcoal">Save 5%</Sticker>
               </div>
+              <p className="mt-1 font-mono text-[11px] uppercase tracking-mono text-charcoal/55">
+                For projects RM 500 and above
+              </p>
               <p className="mt-4 text-sm leading-relaxed text-charcoal/75 md:text-base">
-                Save 5% when you pay upfront in one payment. Fastest project
+                Save 5% when you pay the full amount upfront. Fastest project
                 start, simplest paperwork.
               </p>
               <ul className="mt-5 space-y-2 text-sm text-charcoal/80">
@@ -66,14 +69,14 @@ export default function PaymentOptions({ index = "06", dark = false }: PaymentOp
                     Milestone installments
                   </h3>
                   <p className="mt-1 font-mono text-[11px] uppercase tracking-mono text-charcoal/55">
-                    For projects RM 1,200 and above
+                    For projects RM 501 and above · max 3 months
                   </p>
                 </div>
                 <Sticker rotate={4} variant="outline">No interest</Sticker>
               </div>
               <p className="mt-4 text-sm leading-relaxed text-charcoal/75 md:text-base">
-                Split your payment into 3 stages tied to project milestones. No
-                interest, no fees, no subscriptions.
+                Split into up to 3 payments tied to project milestones. No
+                interest, no fees, no subscriptions — just pay as we hit each stage.
               </p>
               <ol className="mt-5 space-y-3">
                 {milestones.map((m, i) => (

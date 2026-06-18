@@ -35,6 +35,33 @@ export type Package = {
 
 export const packages: Package[] = [
   {
+    name: "Promo",
+    subtitle: "Promo Landing Page",
+    priceFrom: "From RM 200",
+    priceRange: "RM 200 – RM 350",
+    rangeNote: "depending on content",
+    priceNote: "One-time",
+    description:
+      "A simple promotional page to get your business online fast. Share the link anywhere — no domain purchase needed.",
+    bestFor: "Home businesses, pop-ups, side hustles on a tight budget",
+    visibleFeatures: [
+      "1 custom promotional page",
+      "WhatsApp click-to-chat button",
+      "Contact info & business details",
+      "Social media links",
+      "Mobile-friendly layout",
+      "Free hosting (Vercel / Netlify / Beacon.ai)",
+    ],
+    moreFeatures: [
+      "No domain required — shareable free subdomain",
+      "Your brand colours & logo",
+      "Basic on-brand typography",
+      "Ready to upgrade to a full site anytime",
+    ],
+    delivery: "1–2 working days",
+    href: "/services/promo-landing-page",
+  },
+  {
     name: "Starter",
     subtitle: "Landing Page",
     priceFrom: "From RM 500",
@@ -175,9 +202,14 @@ export const packages: Package[] = [
     delivery: "3–4 weeks",
     href: "/services/e-commerce",
     footnote:
-      "Payment gateway integration is a separate add-on (Stripe / Billplz / toyyibPay / SenangPay / iPay88 — from RM 800).",
+      "Payment gateway integration is a separate add-on (Stripe / Billplz / toyyibPay / SenangPay / iPay88 — from RM 500).",
   },
 ];
+
+/** Find the package whose href matches /services/{slug} */
+export function getPackageBySlug(slug: string) {
+  return packages.find((p) => p.href === `/services/${slug}`);
+}
 
 /** Universal footnote shown beneath every pricing card. */
 export const pricingDisclaimer =

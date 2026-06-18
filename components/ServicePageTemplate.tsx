@@ -7,10 +7,12 @@ import HeroBlobs from "@/components/HeroBlobs";
 import Label from "@/components/Label";
 import MeltDivider from "@/components/MeltDivider";
 import PaymentOptions from "@/components/PaymentOptions";
+import PricingCard from "@/components/PricingCard";
 import SectionHeading from "@/components/SectionHeading";
 import Sticker from "@/components/Sticker";
 import WhyPriceRange from "@/components/WhyPriceRange";
 import { WhatsAppIcon } from "@/components/Navbar";
+import { getPackageBySlug } from "@/lib/packages";
 import { site } from "@/lib/site";
 import type { ServiceDetail } from "@/lib/services";
 
@@ -18,6 +20,7 @@ import type { ServiceDetail } from "@/lib/services";
  * Shared layout for the four /services sub-pages.
  */
 export default function ServicePageTemplate({ service }: { service: ServiceDetail }) {
+  const pkg = getPackageBySlug(service.slug);
   return (
     <>
       {/* Hero */}
@@ -115,6 +118,29 @@ export default function ServicePageTemplate({ service }: { service: ServiceDetai
         </div>
       </section>
 
+      <MeltDivider from="#FAF5E8" to="#EEF2F8" />
+
+      {/* Pricing */}
+      {pkg && (
+        <section className="bg-mist py-20 md:py-24">
+          <div className="mx-auto max-w-6xl px-4 md:px-6">
+            <SectionHeading
+              eyebrow="Pricing"
+              title={`What the ${service.name} costs`}
+              description="One-time payment — the price you agree is the price you pay. No hidden fees, no subscriptions."
+            />
+            <div className="mx-auto max-w-sm">
+              <AnimatedSection>
+                <PricingCard pkg={pkg} />
+              </AnimatedSection>
+            </div>
+            <WhyPriceRange className="mt-8" />
+          </div>
+        </section>
+      )}
+
+      <MeltDivider from="#EEF2F8" to="#FAFAF7" />
+
       {/* Automation options for this service */}
       <section className="bg-cream py-20 md:py-24">
         <div className="mx-auto max-w-4xl px-4 md:px-6">
@@ -156,10 +182,9 @@ export default function ServicePageTemplate({ service }: { service: ServiceDetai
 
       <MeltDivider from="#EEF2F8" to="#FAF5E8" />
 
-      {/* Payment + why-range explainer */}
+      {/* Payment options */}
       <div className="bg-buttermilk">
         <PaymentOptions />
-        <WhyPriceRange className="mx-auto -mt-6 mb-20 px-4 md:px-6" />
       </div>
 
       <MeltDivider from="#FAF5E8" to="#EEF2F8" />

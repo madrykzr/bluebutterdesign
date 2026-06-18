@@ -20,6 +20,61 @@ export type ServiceDetail = {
 
 export const serviceDetails: ServiceDetail[] = [
   {
+    slug: "promo-landing-page",
+    name: "Promo Landing Page",
+    headline: "Get online in 48 hours — from RM 200.",
+    intro:
+      "The most budget-friendly way to get your business online. One promotional page, your contact details, and a WhatsApp button — shareable anywhere, no domain needed.",
+    whatItIs:
+      "A promo landing page is a single promotional page hosted for free on Vercel, Netlify, or Beacon.ai. You get a shareable link (like yourbrand.vercel.app) you can post on Instagram, WhatsApp, printed flyers, or anywhere. No domain purchase required — perfect for testing the waters or getting visible fast without the full investment.",
+    whoItsFor: [
+      "Home-based sellers just getting started",
+      "Pop-up stalls, food trucks, or temporary promotions",
+      "Anyone testing a business idea before committing to a bigger site",
+      "Side hustles that need a professional shareable link fast",
+    ],
+    included: [
+      "1 custom-designed promotional page",
+      "Your business name, tagline & description",
+      "WhatsApp click-to-chat button",
+      "Contact info & social media links",
+      "Mobile-friendly layout",
+      "Free hosting on Vercel / Netlify / Beacon.ai",
+    ],
+    automation: {
+      intro: "Simple is the name of the game here — no complicated setup needed:",
+      options: [
+        "WhatsApp First (free) — all enquiries go straight to your WhatsApp. Set up an auto-greeting once and it handles itself",
+        "Social links — direct visitors to your Instagram, Shopee, or wherever you actually sell",
+      ],
+    },
+    timeline: "1–2 working days",
+    price: "From RM 200",
+    priceNote: "RM 200 – RM 350 depending on content",
+    faq: [
+      {
+        question: "Do I need to buy a domain?",
+        answer:
+          "Nope — we deploy to a free subdomain (e.g., yourbrand.vercel.app) which you can share anywhere. If you want a proper .com or .my later, we can add it anytime — it's just RM 50–100/year.",
+      },
+      {
+        question: "Can I upgrade to a proper website later?",
+        answer:
+          "Yes. We build on the same stack, so upgrading to a full Landing Page (RM 500) or Business Website means adding to what's already there — you only pay the difference in work.",
+      },
+      {
+        question: "No enquiry form — how do customers contact me?",
+        answer:
+          "Through WhatsApp directly. We set up a click-to-chat button with a pre-filled greeting so customers reach you in one tap. For most home businesses, this is faster and more personal than a form.",
+      },
+      {
+        question: "What is the difference between this and the RM 500 Landing Page?",
+        answer:
+          "The Promo page is purely promotional — your story, contact info, and WhatsApp button. The full Landing Page adds an enquiry form with Google Sheets tracking, basic SEO, Google Analytics, and a revision round. If you need leads tracked properly, go with the full Landing Page.",
+      },
+    ],
+  },
+  {
     slug: "landing-page",
     name: "Landing Page",
     headline: "One page. One goal. Get customers contacting you.",

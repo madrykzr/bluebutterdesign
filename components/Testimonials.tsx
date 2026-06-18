@@ -5,8 +5,8 @@ import SectionHeading from "@/components/SectionHeading";
 const testimonials = [
   {
     quote:
-      "Working with Bluebutter was painless. They explained everything in plain English and the site was up before our launch date.",
-    name: "Client name",
+      "First time ever building a website, and I had no idea it could look this professional, this clean, this modern — at this price. Honestly thought something like this would cost RM 10k. Bluebutter completely changed my expectation.",
+    name: "Parallel Records",
     business: "Music studio, KL",
   },
   {
