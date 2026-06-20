@@ -34,7 +34,7 @@ const overview = [
     offset: "lg:mt-0",
   },
   {
-    title: "Landing Page",
+    title: "Pro Landing Page",
     description:
       "One sharp, fast page with your story, services, photos and a WhatsApp button. The quickest way to look professional online.",
     href: "/services/landing-page",

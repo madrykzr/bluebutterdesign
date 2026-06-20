@@ -11,6 +11,7 @@ import PricingCard from "@/components/PricingCard";
 import SectionHeading from "@/components/SectionHeading";
 import Sticker from "@/components/Sticker";
 import WhyPriceRange from "@/components/WhyPriceRange";
+import YearlyRunningCosts from "@/components/YearlyRunningCosts";
 import { WhatsAppIcon } from "@/components/Navbar";
 import { getPackageBySlug, type Package } from "@/lib/packages";
 import { site } from "@/lib/site";
@@ -22,9 +23,11 @@ import type { ServiceDetail } from "@/lib/services";
 export default function ServicePageTemplate({
   service,
   additionalPackages,
+  showYearlyCosts = false,
 }: {
   service: ServiceDetail;
   additionalPackages?: Package[];
+  showYearlyCosts?: boolean;
 }) {
   const pkg = getPackageBySlug(service.slug);
   return (
@@ -154,6 +157,7 @@ export default function ServicePageTemplate({
               </div>
             )}
             <WhyPriceRange className="mt-8" />
+            {showYearlyCosts && <YearlyRunningCosts />}
           </div>
         </section>
       )}

@@ -24,7 +24,7 @@ export const metadata: Metadata = {
 
 const servicesOverview = [
   {
-    title: "Landing Page",
+    title: "Pro Landing Page",
     description: "One sharp page with your story, services and a WhatsApp button. Online by next week.",
     href: "/services/landing-page",
     bestFor: "New & home businesses",

@@ -7,7 +7,7 @@ const service = getService("landing-page")!;
 const starterPack = getPackageBySlug("starter-pack-landing-page");
 
 export const metadata: Metadata = {
-  title: "Landing Page Design",
+  title: "Pro Landing Page Design",
   description:
     "One sharp page to tell your story and convert visitors. Mobile-first, SEO-ready, live in under a week. From RM 200.",
   alternates: { canonical: "/services/landing-page" },

@@ -12,5 +12,5 @@ export const metadata: Metadata = {
 };
 
 export default function BusinessWebsiteService() {
-  return <ServicePageTemplate service={service} />;
+  return <ServicePageTemplate service={service} showYearlyCosts />;
 }

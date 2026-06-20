@@ -63,7 +63,7 @@ export const packages: Package[] = [
   },
   {
     name: "Starter",
-    subtitle: "Landing Page",
+    subtitle: "Pro Landing Page",
     priceFrom: "From RM 500",
     priceRange: "RM 500 – RM 1,200",
     rangeNote: "depending on scope",

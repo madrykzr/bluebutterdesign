@@ -24,7 +24,7 @@ export const nav = [
     label: "Services",
     href: "/services",
     children: [
-      { label: "Landing Page", href: "/services/landing-page" },
+      { label: "Pro Landing Page", href: "/services/landing-page" },
       { label: "Business Website", href: "/services/business-website" },
       { label: "Corporate Website", href: "/services/corporate-website" },
       { label: "E-Commerce", href: "/services/e-commerce" },

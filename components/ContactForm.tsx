@@ -11,7 +11,7 @@ import { site } from "@/lib/site";
 const initialState: ContactFormState = { status: "idle", message: "" };
 
 const projectTypes = [
-  "Landing Page",
+  "Pro Landing Page",
   "Business Website",
   "Corporate",
   "E-Commerce",

@@ -42,7 +42,7 @@ export default function PaymentOptions({ index = "06", dark = false }: PaymentOp
                 </div>
                 <Sticker rotate={-5} variant="charcoal">Save 5%</Sticker>
               </div>
-              <p className="mt-1 font-mono text-[11px] uppercase tracking-mono text-charcoal/55">
+              <p className="mt-2 font-heading text-sm font-semibold text-charcoal/80">
                 For projects RM 500 and above
               </p>
               <p className="mt-4 text-sm leading-relaxed text-charcoal/75 md:text-base">
@@ -68,7 +68,7 @@ export default function PaymentOptions({ index = "06", dark = false }: PaymentOp
                   <h3 className="mt-1 font-heading text-2xl font-semibold text-charcoal">
                     Milestone installments
                   </h3>
-                  <p className="mt-1 font-mono text-[11px] uppercase tracking-mono text-charcoal/55">
+                  <p className="mt-2 font-heading text-sm font-semibold text-charcoal/80">
                     For projects RM 501 and above · max 3 months
                   </p>
                 </div>

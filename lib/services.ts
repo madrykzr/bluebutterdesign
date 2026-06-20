@@ -60,7 +60,7 @@ export const serviceDetails: ServiceDetail[] = [
       {
         question: "Can I upgrade to a proper website later?",
         answer:
-          "Yes. We build on the same stack, so upgrading to a full Landing Page (RM 500) or Business Website means adding to what's already there, you only pay the difference in work.",
+          "Yes. We build on the same stack, so upgrading to a full Pro Landing Page (RM 500) or Business Website means adding to what's already there, you only pay the difference in work.",
       },
       {
         question: "No enquiry form, how do customers contact me?",
@@ -68,15 +68,15 @@ export const serviceDetails: ServiceDetail[] = [
           "Through WhatsApp directly. We set up a click-to-chat button with a pre-filled greeting so customers reach you in one tap. For most home businesses, this is faster and more personal than a form.",
       },
       {
-        question: "What is the difference between this and the RM 500 Landing Page?",
+        question: "What is the difference between this and the RM 500 Pro Landing Page?",
         answer:
-          "The Starter Pack is purely a presence page, your story, contact info, and WhatsApp button. The full Landing Page adds an enquiry form with Google Sheets tracking, basic SEO, Google Analytics, and a revision round. If you need leads tracked properly, go with the full Landing Page.",
+          "The Starter Pack is purely a presence page, your story, contact info, and WhatsApp button. The Pro Landing Page adds an enquiry form with Google Sheets tracking, basic SEO, Google Analytics, and a revision round. If you need leads tracked properly, go with the Pro Landing Page.",
       },
     ],
   },
   {
     slug: "landing-page",
-    name: "Landing Page",
+    name: "Pro Landing Page",
     headline: "One page. One goal. Get customers contacting you.",
     intro:
       "The fastest, most affordable way to get your business online properly, a single beautiful page that tells people who you are, what you do, and how to reach you.",
